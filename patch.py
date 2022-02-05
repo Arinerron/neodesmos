@@ -116,6 +116,12 @@ def support_degrees():
     insert_after_re(r'(\S)\["√"\]\=function\(\)\{return new (\S\S)\("\\\\sqrt\{\}"\)\}', r',\2.deg=function(){return new \3("^{\\circ}")}')
     insert_after('var e="alpha beta ', 'deg ')
 
+def support_greek():
+    letters = ["gamma", "delta", "zeta", "eta", "iota", "kappa", "mu", "nu", "xi", "rho", "sigma", "tau", "chi", "psi"]
+    
+    for letter in letters:
+        insert_after('var e="alpha beta ', letter + ' ')
+
 
 ######
 
@@ -129,7 +135,8 @@ features = [
     support_inf,
     support_nrt,
 
-    support_degrees
+    support_degrees,
+    support_greek
 ]
 
 for feature in features:
