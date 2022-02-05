@@ -23,6 +23,13 @@ def insert_after(needle, data):
     _check_needle(needle)
     source = source.replace(needle, needle + data)
 
+
+def replace(needle, data):
+    global source
+    _check_needle(needle)
+    source = source.replace(needle, data)
+
+
 def insert_before_re(needle, data):
     global source
     _check_needle_re(needle)
@@ -33,12 +40,32 @@ def insert_after_re(needle, data):
     _check_needle_re(needle)
     source = re.sub('('+needle+')', r'\1' + data, source)
 
+
 ######
 
 
 def disable_bugsnag():
     insert_after('sessions.bugsnag.com', '.example.com')
     insert_after('notify.bugsnag.com', '.example.com')
+
+
+def inject_globals():
+    insert_after_re('^var requirejs,require,define;', (
+        'var PATCH_INIT_RAN=false;'
+        'function PATCH_INIT(){'
+            'if(!PATCH_INIT_RAN){'
+                'console.log("Patching Desmos...");'
+                'PATCH_INIT_RAN=true;'
+                '/*PATCH_INIT*/'
+            '}'
+        '};')
+    )
+    insert_after_re(r'\S\.prototype\.setRootElt\=function\((\S)\)\{', r'window.GLOBAL_E=this;PATCH_INIT();')
+
+
+def default_dark():
+    global source
+    insert_after('/*PATCH_INIT*/', 'GLOBAL_E.graphSettings.config.invertedColors = true;')
 
 
 def support_inf():
@@ -61,6 +88,9 @@ def support_degrees():
 
 features = [
     disable_bugsnag,
+    inject_globals,
+
+    default_dark,
 
     support_inf,
     support_nrt,
