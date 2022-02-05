@@ -61,6 +61,18 @@ def disable_bugsnag():
 
 def inject_globals():
     insert_after_re('^var requirejs,require,define;', (
+        'function PATCH_SHOW_TOAST(msg) {'
+            # NOTE: You can find more events you can dispatch by searching for "e.prototype.handleDispatchedAction = function(e) {" in the rev js file
+            "window.controller.dispatch({"
+                'type: "toast/show",'
+                'toast: {'
+                    'message: msg,'
+                    #'hideAfter: 0,'
+                    'toastStyle: "cover"'
+                "}"
+            "})"
+        '}'
+
         'var PATCH_INIT_RAN=false;'
         'function PATCH_INIT(){'
             'if(!PATCH_INIT_RAN){'
@@ -70,7 +82,7 @@ def inject_globals():
             '}'
         '};')
     )
-    insert_after_re(r'\S\.prototype\.setRootElt\=function\((\S)\)\{', r'window.GLOBAL_E=this;PATCH_INIT();')
+    insert_after_re(r'\S\.prototype\.setRootElt\=function\((\S)\)\{', r'window.controller=this;PATCH_INIT();')
 
 
 def inject_neodesmos_banner():
@@ -86,7 +98,7 @@ def inject_neodesmos_banner():
 
 
 def default_dark():
-    patch_inject_init('GLOBAL_E.graphSettings.config.invertedColors = true;')
+    patch_inject_init('controller.graphSettings.config.invertedColors = true;')
 
 
 def support_inf():
