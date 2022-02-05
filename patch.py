@@ -73,6 +73,18 @@ def inject_globals():
     insert_after_re(r'\S\.prototype\.setRootElt\=function\((\S)\)\{', r'window.GLOBAL_E=this;PATCH_INIT();')
 
 
+def inject_neodesmos_banner():
+    patch_inject_init(
+        "var banner = document.createElement('div');"
+        "banner.className = 'dcg-powered-by';"
+        "banner.style.fontStyle = 'italic';"
+        "banner.style.color = 'gray';"
+        "banner.style.fontSize = 'smaller';"
+        "banner.innerText = '(neodesmos enabled)';"
+        "document.querySelector('span[class=dcg-noedit-branding]').prepend(banner);"
+    )
+
+
 def default_dark():
     patch_inject_init('GLOBAL_E.graphSettings.config.invertedColors = true;')
 
@@ -99,6 +111,7 @@ features = [
     disable_bugsnag,
     inject_globals,
 
+    inject_neodesmos_banner,
     default_dark,
 
     support_inf,
