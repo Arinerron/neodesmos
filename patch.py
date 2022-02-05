@@ -35,15 +35,29 @@ def insert_after_re(needle, data):
 
 ######
 
+
 def support_inf():
-    insert_before('g.infty=g.infin=g.infinity=', 'g.inf=')
-    insert_after('var e="alpha beta ', 'inf ')
+    insert_before('g.infty=g.infin=g.infinity=', 'g.inf=') # TODO: convert to insert_before_re
+    insert_after_re(r'var \S\="alpha beta ', 'inf ')
+
+
+def support_nrt():
+    insert_after_re(r'(\S).nthroot=(\S\S),', r'\2.nrt=\3,')
+    insert_after_re(r'var \S\="alpha beta ', 'nrt ')
+
+
+def support_degrees():
+    return False
+    insert_after_re(r'(\S)\["√"\]\=function\(\)\{return new (\S\S)\("\\\\sqrt\{\}"\)\}', r',\2.deg=function(){return new \3("^{\\circ}")}')
+    insert_after('var e="alpha beta ', 'deg ')
 
 
 ######
 
 features = [
-    support_inf
+    support_inf,
+    support_nrt,
+    support_degrees
 ]
 
 for feature in features:
