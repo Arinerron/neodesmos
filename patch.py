@@ -36,6 +36,11 @@ def insert_after_re(needle, data):
 ######
 
 
+def disable_bugsnag():
+    insert_after('sessions.bugsnag.com', '.example.com')
+    insert_after('notify.bugsnag.com', '.example.com')
+
+
 def support_inf():
     insert_before('g.infty=g.infin=g.infinity=', 'g.inf=') # TODO: convert to insert_before_re
     insert_after_re(r'var \S\="alpha beta ', 'inf ')
@@ -55,8 +60,11 @@ def support_degrees():
 ######
 
 features = [
+    disable_bugsnag,
+
     support_inf,
     support_nrt,
+
     support_degrees
 ]
 
