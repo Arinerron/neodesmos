@@ -41,6 +41,16 @@ def insert_after_re(needle, data):
     source = re.sub('('+needle+')', r'\1' + data, source)
 
 
+
+######
+
+
+
+def patch_inject_init(code):
+    insert_before('/*PATCH_INIT*/', code)
+
+
+
 ######
 
 
@@ -64,8 +74,7 @@ def inject_globals():
 
 
 def default_dark():
-    global source
-    insert_after('/*PATCH_INIT*/', 'GLOBAL_E.graphSettings.config.invertedColors = true;')
+    patch_inject_init('GLOBAL_E.graphSettings.config.invertedColors = true;')
 
 
 def support_inf():
