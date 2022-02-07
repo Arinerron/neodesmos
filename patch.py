@@ -7,11 +7,11 @@ with open('calculator_desktop.min.js', 'r') as f:
 
 def _check_needle(needle):
     global source
-    assert source.count(needle) == 1, 'Found needle %s a non-one number of times in the source (%d times)' % (repr(needle), source.count(needle))
+    assert source.count(needle) == 1, 'Found needle %s %d times in the source (should only be one match)' % (repr(needle), source.count(needle))
 
 def _check_needle_re(needle):
     global source
-    assert len(re.findall(needle, source)) == 1, 'Found needle %s a non-one number of times in the source (%d times)' % (repr(needle), source.count(needle))
+    assert len(re.findall(needle, source)) == 1, 'Found needle %s %d times in the source (should only be one match)' % (repr(needle), source.count(needle))
 
 def insert_before(needle, data):
     global source
@@ -122,7 +122,7 @@ def default_dark():
 
 
 def support_inf():
-    insert_before('g.infty=g.infin=g.infinity=', 'g.inf=') # TODO: convert to insert_before_re
+    insert_before_re('(\S)\.infty=\S\.infin=\S\.infinity=', 'g.inf=') # TODO: convert to insert_before_re
     insert_after_re(r'var \S\="alpha beta ', 'inf ')
 
 
@@ -132,15 +132,15 @@ def support_nrt():
 
 
 def support_degrees():
+    # not fully implemented
     return False
     insert_after_re(r'(\S)\["√"\]\=function\(\)\{return new (\S\S)\("\\\\sqrt\{\}"\)\}', r',\2.deg=function(){return new \3("^{\\circ}")}')
-    insert_after('var e="alpha beta ', 'deg ')
+    insert_after_re('var \S="alpha beta ', 'deg ')
+
 
 def support_greek():
     letters = ["gamma", "delta", "zeta", "eta", "iota", "kappa", "mu", "nu", "xi", "rho", "sigma", "tau", "chi", "psi"]
-    
-    for letter in letters:
-        insert_after('var e="alpha beta ', letter + ' ')
+    insert_after_re('var \S="alpha beta ', ''.join(letter + ' ' for letter in letters))
 
 
 ######
