@@ -47,7 +47,13 @@ def insert_after_re(needle, data):
 
 
 def patch_inject_init(code):
-    insert_before('/*PATCH_INIT*/', code)
+    # wrap in {  } so variables have limited scope
+    insert_before('/*PATCH_INIT*/', '{ %s }' % code)
+
+
+def patch_inject_onload(code):
+    # wrap in {  } so variables have limited scope
+    insert_before('/*PATCH_ONLOAD*/', '{ %s }' % code)
 
 
 
@@ -73,14 +79,16 @@ def inject_globals():
             "})"
         '}'
 
-        'var PATCH_INIT_RAN=false;'
-        'function PATCH_INIT(){'
-            'if(!PATCH_INIT_RAN){'
+        'var PATCH_INIT_RAN = false;'
+        'function PATCH_INIT() {'
+            'if (!PATCH_INIT_RAN) {'
                 'console.log("Patching Desmos...");'
-                'PATCH_INIT_RAN=true;'
+                'PATCH_INIT_RAN = true;'
                 '/*PATCH_INIT*/'
             '}'
-        '};')
+        '};'
+
+        "window.addEventListener('load', function() {/*PATCH_ONLOAD*/}, false);")
     )
     insert_after_re(r'\S\.prototype\.setRootElt\=function\((\S)\)\{', r'window.controller=this;PATCH_INIT();')
 
@@ -94,6 +102,18 @@ def inject_neodesmos_banner():
         "banner.style.fontSize = 'smaller';"
         "banner.innerText = '(neodesmos enabled)';"
         "document.querySelector('span[class=dcg-noedit-branding]').prepend(banner);"
+    )
+
+    insert_before_re(r'\},\S\}\(\S\.Class\);\S\.DesmosSVGLogo=\S',
+        ";"
+        "var banner = document.createElement('h1');"
+        "banner.style.display = 'inline';"
+        "banner.style.verticalAlign = 'sub';"
+        "banner.style.padding = '0';"
+        "banner.style.margin = '0';"
+        "banner.style.marginRight = '-0.2em';"
+        "banner.innerText = 'neo';"
+        "document.querySelector('div[class=dcg-header-desktop] > div[class=align-center-container]').prepend(banner);"
     )
 
 
