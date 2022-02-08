@@ -30,9 +30,10 @@ class InjectGlobalsFeature(Feature):
             'var PATCH_INIT_RAN = false;'
             'function PATCH_INIT() {'
                 'if (!PATCH_INIT_RAN) {'
-                    'console.log("Patching Desmos...");'
+                    'console.debug("Running PATCH_INIT scripts...");'
                     'PATCH_INIT_RAN = true;'
                     '/*PATCH_INIT*/'
+                    r'console.log('+repr(r'                      _                               \n _ __   ___  ___   __| | ___  ___ _ __ ___   ___  ___ \n| \'_ \\ \/ _ \\\/ _ \\ \/ _` |\/ _ \\\/ __| \'_ ` _ \\ \/ _ \\\/ __|\n| | | |  __\/ (_) | (_| |  __\/\\__ \\ | | | | | (_) \\__ \\\n|_| |_|\\___|\\___\/ \\__,_|\\___||___\/_| |_| |_|\\___\/|___\/\n       \nYou\'re using neodesmos. Congrats!\n\nIf you want to help out with the project, see:\nhttps://github.com/Arinerron/neodesmos/wiki/ideas')+r');'
                 '}'
             '};'
 
