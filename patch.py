@@ -96,28 +96,11 @@ def inject_globals():
 
 
 def inject_neodesmos_banner():
-    patch_inject_init(
-        "var banner = document.createElement('div');"
-        "banner.className = 'dcg-powered-by';"
-        "banner.style.fontStyle = 'italic';"
-        "banner.style.color = 'gray';"
-        "banner.style.fontSize = 'smaller';"
-        "banner.innerText = '(neodesmos enabled)';"
-        "document.querySelector('span[class=dcg-noedit-branding]').prepend(banner);"
-    )
-
-    insert_before_re(r'\},\S\}\(\S\.Class\);\S\.DesmosSVGLogo=\S',
-        ";"
-        "var banner = document.createElement('h1');"
-        "banner.style.display = 'inline';"
-        "banner.style.verticalAlign = 'sub';"
-        "banner.style.padding = '0';"
-        "banner.style.margin = '0';"
-        "banner.style.marginRight = '-0.2em';"
-        "banner.innerText = 'neo';"
-        "document.querySelector('div[class=dcg-header-desktop] > div[class=align-center-container]').prepend(banner);"
-    )
-
+    with open('default_logo.txt', 'r') as f:
+        default_logo = f.read().rstrip("\n")
+    with open('neo_logo.txt', 'r') as f:
+        neo_logo = f.read().rstrip("\n")
+    replace(default_logo, neo_logo, matches=1)
 
 def default_dark():
     patch_inject_init('controller.graphSettings.config.invertedColors = true;')
@@ -417,7 +400,7 @@ define("core/math/parsenode/vector", ["require", "pjs", "./expression", "core/ma
 
     #insert_after('E=o.initialPrec,f={trailingComma:!1};', 'console.log("THIS IS c:", c);console.log("THIS IS p:", p);', matches=2)
 
-
+# his.addSVGLogo)})},s.prototype.addSVGLogo=function(c){c.innerHTML='\n    <svg version="1.1" cla
 ######
 
 features = [
