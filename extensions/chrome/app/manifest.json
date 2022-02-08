@@ -1,8 +1,8 @@
 {
-  "name": "__MSG_appName__",
+  "name": "neodesmos",
   "version": "0.0.1",
   "manifest_version": 2,
-  "description": "__MSG_appDescription__",
+  "description": "An unofficial Desmos.com expansion pack",
   "icons": {
     "16": "images/icon-16.png",
     "128": "images/icon-128.png"
@@ -13,20 +13,20 @@
       "libs/polyfill.min.js",
       "scripts/chromereload.js",
       "scripts/background.js"
-    ]
+    ],
+    "persistent": true
   },
   "permissions": [
-    "webNavigation",
+    "tabs",
     "webRequest",
+    "webNavigation",
     "webRequestBlocking",
-    "*://*.desmos.com/",
-    "*://desmos.com/",
+    "*://www.desmos.com/*"
   ],
   "content_scripts": [
     {
       "matches": [
-        "http://*/*",
-        "https://*/*"
+        "*://www.desmos.com/*"
       ],
       "js": [
         "scripts/contentscript.js"

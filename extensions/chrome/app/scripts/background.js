@@ -6,12 +6,13 @@ chrome.runtime.onInstalled.addListener(details => {
 
 chrome.webRequest.onBeforeRequest.addListener(
     function(details) {
-        if (details.url === 'https://desmos.com/')
+        console.log('neodesmos logged request:', details)
+        if (details.url.match(/https?:\/\/(www\.)?desmos\.com\/$/))
             return {redirectUrl: 'https://desmos.com/calculator' };
         if (details.url.match(/https?:\/\/(www\.)?desmos\.com\/assets\/build\/calculator_desktop-.*\.js$/))
-            return {redirectUrl: 'https://github.com/Arinerron/neodesmos/blob/main/files/calculator_desktop_patched.min.js?raw=true'}
+            return {redirectUrl: 'https://arinerron.github.io/neodesmos/files/calculator_desktop_patched.min.js'}
     },
-    {urls: ["*://desmos.com/*"]},
+    {urls: ["*://www.desmos.com/*"]},
     ["blocking"]
 );
 
