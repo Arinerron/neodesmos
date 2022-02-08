@@ -12,8 +12,9 @@ if __name__ == '__main__':
     features = [
         features.general.DisableBugsnagFeature,
         features.general.InjectGlobalsFeature,
-        features.general.InjectBannerFeature,
         features.general.DefaultDarkFeature,
+
+        features.banner.InjectBannerFeature,
 
         features.vectors.VectorNotationFeature,
 

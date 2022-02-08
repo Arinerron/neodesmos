@@ -67,6 +67,6 @@ class Feature:
         raise NotImplementedError()
 
 
-from . import vectors, symbols, general
+from . import vectors, symbols, general, banner
 
 
