@@ -352,7 +352,10 @@ define("core/math/parsenode/vector", ["require", "pjs", "./expression", "core/ma
         return g.ConstantOfType(_, F);
 '''.replace('\n', ''), matches=2)
 
-    insert_after_re(r'(\S)\.EmptyList=11,', r'\2.EmptyVector=59,\2.VectorOfNumber=58,', matches=2) # XXX: 59 could exist in the future, assuming unused
+    INSTRUCTION_VECTOR_OF_NUMBER = 58
+    INSTRUCTION_EMPTY_VECTOR = 59
+
+    insert_after_re(r'(\S)\.EmptyList=11,', r'\2.EmptyVector=' + str(INSTRUCTION_EMPTY_VECTOR) + r',\2.VectorOfNumber=' + str(INSTRUCTION_VECTOR_OF_NUMBER) + r',', matches=2) # XXX: 59 could exist in the future, assuming unused
     insert_after_re(r'(\S)\[\S\.EmptyList\]=(\S)\.Number,', r'\2[\3.EmptyVector] = \3.Number,\2[\3.VectorOfNumber] = \3.Number,', matches=2)
     insert_after_re(r'case (\S)\.EmptyList:return"EmptyList";', r'case \2.EmptyVector:return"EmptyVector";', matches=2)
     insert_before_re(r'case \S\.ListOfPolygon:case (\S)\.EmptyList:return!0;', r'case \2.EmptyVector:case \2.VectorOfNumber:', matches=2)
@@ -388,9 +391,30 @@ define("core/math/parsenode/vector", ["require", "pjs", "./expression", "core/ma
 
     #insert_after(r'},u(function(){', 'console.log("this",this,"e",e);debugger;', matches=1)
     # DEBUG TODO remove
-    insert_after('e.valueToLatex=function e(a,i){', 'console.log("VALUETOLATEX:",a,i);debugger;', matches=2)
+    #insert_after('e.valueToLatex=function e(a,i){', 'console.log("VALUETOLATEX:",a,i);debugger;', matches=2)
     insert_after('e.Polygon;function o(t){', 'console.log("matching type=",t);', matches=2)
     
+    # XXX/TODO: figure out how to prevent vector+scalar
+    '''
+    insert_after_re(r'case t\.(Add|Subtract):(var )?p=\[a\.Number,a\.Number\];if\(!u\(e,c\.args,p\)',
+        r' || using_sv(e, c.args)', matches=4)
+    insert_before(r'function u(e,r,t){', r'function using_sv(e, r) {'
+            r'var all_vectors = true;'
+            r'var found_vector = false;'
+            r'for (var s = 0; s < r.length; s++) {'
+                r'var n = e.getInstruction(r[s]).valueType;'
+                r'if (n === ' + str(INSTRUCTION_VECTOR_OF_NUMBER) + r' || n === ' + str(INSTRUCTION_EMPTY_VECTOR) + ') {'
+                    r'found_vector = true;'
+                r'} else {'
+                    r'all_vectors = false;'
+                r'}'
+            r'}'
+            r'return found_vector && !all_vectors;' # not all are vectors, but at least one is
+        r'}', matches=2)
+    '''
+
+    # TODO: add an icon that shows the item is a vector (like if you type f(x) it shows a squiggly line)
+
     # DEBUG TODO remove
     #insert_before(r'switch(R.type){', 'console.log("Parsing token", R.type, "type of R =", R);', matches=2)
     
