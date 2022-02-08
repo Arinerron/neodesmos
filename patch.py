@@ -2,8 +2,10 @@
 
 import traceback
 import sys
+import time
 
 import features
+
 
 if __name__ == '__main__':
     with open('calculator_desktop.min.js', 'r') as f:
@@ -25,14 +27,16 @@ if __name__ == '__main__':
     ]
     
     for feature in features:
-        print(f'Adding feature {feature.__name__}...\t', end='')
+        print(f'Adding feature {feature.__name__}...\t ', end='')
         sys.stdout.flush()
+
+        start = time.time_ns() // 100000
         f = feature(source)
 
         try:
             f.patch()
             source = f.source
-            print('SUCCESS')
+            print('SUCCESS\t %.2fs' % (((time.time_ns() // 100000) - start) / 10000))
         except:
             print('FAILURE\n')
             traceback.print_exc()
