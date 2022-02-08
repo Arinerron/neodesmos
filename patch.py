@@ -8,7 +8,7 @@ import features
 
 
 if __name__ == '__main__':
-    with open('calculator_desktop.min.js', 'r') as f:
+    with open('files/calculator_desktop.min.js', 'r') as f:
         source = f.read()
 
     features = [
@@ -47,5 +47,5 @@ if __name__ == '__main__':
                 exit(1)
 
 
-    with open('calculator_desktop_patched.min.js', 'w') as f:
+    with open('files/calculator_desktop_patched.min.js', 'w') as f:
         f.write(source)
