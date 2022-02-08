@@ -41,18 +41,26 @@ class InjectGlobalsFeature(Feature):
         self.insert_after_re(r'\S\.prototype\.setRootElt\=function\((\S)\)\{', r'window.controller=this;PATCH_INIT();')
 
 
-class InjectBannerFeature(Feature):
-    def patch(self):
-        with open('default_logo.txt', 'r') as f:
-            default_logo = f.read().rstrip("\n")
-        with open('neo_logo.txt', 'r') as f:
-            neo_logo = f.read().rstrip("\n")
+######
 
-        self.replace(default_logo, neo_logo)
+
+class InjectAboutFeature(Feature):
+    def patch(self):
+        self.insert_after_re(r'(\S)\.createElement\("a",\{class:\S\.const\("dcg-action-accountsettings',
+            r'\2.createElement("a", {r'
+                r'class: \2.const("dcg-action-neodesmos"),'
+                r'role: \2.const("link"),'
+                r'tabindex: \2.const(0),'
+                r'onTap: function() { window.location = "https://github.com/Arinerron/neodesmos/"; }'
+            r'}, function() {'
+                r'return controller.s("account-shell-link-neodesmos")'
+            r'}),')
+        self.insert_before('\\naccount-shell-link-sign-out = ', '\\naccount-shell-link-neodesmos = About neodesmos')
 
 
 class DefaultDarkFeature(Feature):
     def patch(self):
         self.patch_inject_init('controller.graphSettings.config.invertedColors = true;')
+        self.replace('Reverse Contrast', 'Dark Theme', matches=4)
 
 
