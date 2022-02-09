@@ -23,7 +23,8 @@ if __name__ == '__main__':
         features.symbols.SupportInfFeature,
         features.symbols.SupportNrtFeature,
         #features.symbols.SupportDegreesFeature,
-        features.symbols.SupportGreekFeature
+        features.symbols.SupportGreekFeature,
+        #features.symbols.SupportLaTeXFeature,
     ]
     
     for feature in features:

@@ -46,6 +46,10 @@ class Feature:
         self.source = re.sub('('+needle+')', r'\1' + data, self.source)
 
 
+    def replace_re(self, needle, data, **kwargs):
+        self._check_needle_re(needle, **kwargs)
+        self.source = re.sub('('+needle+')', data, self.source)
+
     
     ######
 
