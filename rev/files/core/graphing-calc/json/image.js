@@ -1,4 +1,3 @@
-
 define('core/graphing-calc/json/image', ["require", "exports", "tslib", "core/lib/default-spec", "../../lib/copy-properties"], function(require, e, t, i, a) {
     "use strict";
     function n(t) {

@@ -1,4 +1,3 @@
-
 define('calculator-shell/modals', ["require", "exports", "tslib", "dcgview", "./save-dialog", "shared-components/shared-signup-modal", "shared-components/shared-login-modal", "shared-components/shared-recover-password-modal", "./hotkeys-dialog", "./unsupported-browser", "shared-components/shared-account-settings-modal", "shared-components/shared-change-email-modal", "./export-image-dialog", "shared-components/shared-consent-modal", "./contest-submission-dialog", "shared-components/modal", "shared-components/shared-account-reenabled-modal", "./advanced-settings", "./delete-modal", "loadcss!modals"], function(require, e, o, t, n, r, l, c, a, s, i, d, p, u, m, h, g, f, E) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

@@ -1,4 +1,3 @@
-
 define('core/graphing-calc/migrations/0', ['require'], function(require) {
     "use strict";
     var r = {

@@ -1,4 +1,3 @@
-
 define('core/math/implicit-plotter', ["require", "exports", "core/math/distance", "./curve-accumulator"], function(require, e, r, i) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

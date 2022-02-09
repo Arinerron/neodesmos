@@ -1,4 +1,3 @@
-
 define('analytics/queries/graph-feature', ["require", "exports", "graphing-calc/models/expression"], function(require, e, r) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

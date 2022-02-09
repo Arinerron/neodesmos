@@ -1,4 +1,3 @@
-
 define('expressions/image-view', ["require", "exports", "tslib", "keys", "jquery", "underscore", "./abstract-item-view", "./smart_textarea", "dcgview", "dcgview-helpers/mathquill-view", "lib/conditional_blur", "expressions/promptslider_view", "./image-icon-view", "./image-upload-view", "main/mathquill-operators", "graphing-calc/models/image", "./expression-edit-actions", "../shared-components/mathquill-braille-wrapper", "./expression_view", "./action-info-view", "jquery.handleevent", "loadcss!./image-view"], function(require, e, t, n, o, r, i, l, c, a, s, d, u, p, g, m, h, f, y, b) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

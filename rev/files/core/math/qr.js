@@ -1,4 +1,3 @@
-
 define('core/math/qr', ["require", "exports"], function(require, r) {
     "use strict";
     function t(r, t) {

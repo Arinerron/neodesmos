@@ -1,4 +1,3 @@
-
 define('main/mathquill-operators', ["require", "exports", "config"], function(require, t, e) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

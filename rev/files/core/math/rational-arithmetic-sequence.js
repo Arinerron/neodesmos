@@ -1,4 +1,3 @@
-
 define('core/math/rational-arithmetic-sequence', ['require', 'core/math/distance', 'core/math/builtin'], function(require) {
     "use strict";
     var n = require("core/math/distance")

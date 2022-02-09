@@ -1,4 +1,3 @@
-
 define('predicates/common', ['require', 'parser', 'core/math/conics', 'graphing-calc/models/expression', 'graphing-calc/models/list'], function(require) {
     "use strict";
     var n = require("parser")

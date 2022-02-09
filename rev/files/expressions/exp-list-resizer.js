@@ -1,4 +1,3 @@
-
 define('expressions/exp-list-resizer', ["require", "exports", "tslib", "dcgview", "jquery", "underscore", "loadcss!./exp-list-resizer"], function(require, i, t, e, n, s) {
     "use strict";
     Object.defineProperty(i, "__esModule", {

@@ -1,4 +1,3 @@
-
 define('shared-components/shared-delete-account', ["require", "exports", "tslib", "dcgview", "shared/dcgviews/localize", "./shared-account-modal-errors", "loadcss!./shared-account-settings-modal", "loadcss!shared-components/btn-styles"], function(require, e, t, n, o, r) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

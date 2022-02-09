@@ -1,4 +1,3 @@
-
 define('core/math/findIntersections', ['require', 'core/types/graphmode', './plotter', 'parsenodes', 'core/math/distance'], function(require) {
     "use strict";
     var n = require("core/types/graphmode")

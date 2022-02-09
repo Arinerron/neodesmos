@@ -1,4 +1,3 @@
-
 define('api/headless', ["require", "exports", "main/calc_headless", "graphing-calc/json/config-options", "main/shared-clock-bus", "main/shared-worker-pool", "graphing-calc/api/sanitize-expression", "underscore_model", "lib/console"], function(require, t, e, o, s, i, r, n, p) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

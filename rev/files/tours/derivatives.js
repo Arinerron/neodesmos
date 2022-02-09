@@ -1,4 +1,3 @@
-
 define('tours/derivatives', ['require', 'pjs', './base_tour', './derivatives_predicates'], function(require) {
     "use strict";
     var t = require("pjs")

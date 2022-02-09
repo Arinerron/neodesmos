@@ -1,4 +1,3 @@
-
 define('shared-components/shared-recover-password-modal', ["require", "exports", "tslib", "dcgview", "shared-components/modal", "./shared-account-modal-errors", "loadcss!./shared-account-modal"], function(require, e, t, r, n, o) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

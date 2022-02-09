@@ -1,4 +1,3 @@
-
 define('submodules/dcgview/build-amd/attr-generic', ["./const", "./attr"], function(t, n) {
     "use strict";
     function e(t) {

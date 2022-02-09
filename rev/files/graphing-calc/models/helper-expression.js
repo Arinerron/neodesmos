@@ -1,4 +1,3 @@
-
 define('graphing-calc/models/helper-expression', ["require", "exports", "core/math/evaluationstate", "tslib", "underscore", "core/math/evaluationstate"], function(require, e, t, a, u, i) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

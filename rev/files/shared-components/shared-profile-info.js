@@ -1,4 +1,3 @@
-
 define('shared-components/shared-profile-info', ["require", "exports", "tslib", "dcgview", "./shared-delete-account", "./shared-email-settings", "loadcss!./shared-profile-info"], function(require, e, t, n, o, a) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

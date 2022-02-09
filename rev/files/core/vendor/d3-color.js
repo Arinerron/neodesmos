@@ -1,4 +1,3 @@
-
 define('core/vendor/d3-color', ['require'], function(require) {
     function e(e, t, r) {
         e.prototype = t.prototype = r,

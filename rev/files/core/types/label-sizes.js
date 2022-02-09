@@ -1,4 +1,3 @@
-
 define('core/types/label-sizes', ["require", "exports"], function(require, e) {
     "use strict";
     var i;

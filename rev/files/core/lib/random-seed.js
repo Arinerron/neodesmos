@@ -1,4 +1,3 @@
-
 define('core/lib/random-seed', ["require", "exports", "core/lib/md5"], function(require, e, t) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

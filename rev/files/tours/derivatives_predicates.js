@@ -1,4 +1,3 @@
-
 define('tours/derivatives_predicates', ['require', 'predicates/common'], function(require) {
     "use strict";
     var E = require("predicates/common")

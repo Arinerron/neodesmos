@@ -1,4 +1,3 @@
-
 define('mygraphs/wrapper', ["require", "exports", "lib/app-bridge", "tslib", "dcgview", "./mygraphs"], function(require, r, n, e, o, t) {
     "use strict";
     Object.defineProperty(r, "__esModule", {

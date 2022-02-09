@@ -1,4 +1,3 @@
-
 define('expressions/cdf-footer-view', ["require", "exports", "tslib", "dcgview", "jquery", "keys", "graphing-calc/models/expression", "dcgview-helpers/mathquill-view", "./evaluation-view", "main/mathquill-operators", "dcgview-helpers/checkbox", "../shared-components/mathquill-braille-wrapper", "./expression_view", "loadcss!./cdf-footer-view"], function(require, e, n, t, o, r, i, l, a, c, d, s, u) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

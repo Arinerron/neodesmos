@@ -1,4 +1,3 @@
-
 define('submodules/dcgview/build-amd/mounting', ["./bindings"], function(n) {
     "use strict";
     function e(n) {

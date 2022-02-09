@@ -1,4 +1,3 @@
-
 define('graphing/poidotslayer', ['require', 'loadcss!poi', 'pjs', './graphslayer', './constants'], function(require) {
     "use strict";
     require("loadcss!poi");

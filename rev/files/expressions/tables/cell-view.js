@@ -1,4 +1,3 @@
-
 define('expressions/tables/cell-view', ["require", "exports", "tslib", "keys", "dcgview", "jquery", "dcgview-helpers/mathquill-view", "dcgview-helpers/static-mathquill-view", "underscore", "graphing-calc/models/table", "../../dcgview-helpers/tooltipped-error", "lib/conditional_blur", "main/mathquill-operators", "../../shared-components/mathquill-braille-wrapper", "../expression_view"], function(require, e, t, n, o, l, r, i, a, s, c, d, u, h, p) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

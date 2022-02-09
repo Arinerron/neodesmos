@@ -1,4 +1,3 @@
-
 define('expressions/expressions-header', ["require", "exports", "tslib", "./add_expression_view", "dcgview", "main/manage-focus-helper", "../shared-components/tooltip", "loadcss!./expressions-header"], function(require, t, n, e, o, r, c) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

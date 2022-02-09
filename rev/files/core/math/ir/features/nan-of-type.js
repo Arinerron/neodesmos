@@ -1,4 +1,3 @@
-
 define('core/math/ir/features/nan-of-type', ["require", "exports", "core/math/types"], function(require, e, a) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

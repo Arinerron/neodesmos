@@ -1,4 +1,3 @@
-
 define('graphing-calc/models/text', ["require", "exports", "tslib", "./abstract-item", "core/lib/deepCopy", "core/lib/copy-properties", "core/graphing-calc/json/text"], function(require, e, t, a, d, o, c) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

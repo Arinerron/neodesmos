@@ -1,4 +1,3 @@
-
 define('shared-components/shared-cookie-notice', ["require", "exports", "tslib", "dcgview", "shared/dcgviews/localize"], function(require, e, t, s, o) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

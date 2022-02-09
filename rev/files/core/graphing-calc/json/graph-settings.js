@@ -1,4 +1,3 @@
-
 define('core/graphing-calc/json/graph-settings', ["require", "exports", "tslib"], function(require, i, s) {
     "use strict";
     var e;

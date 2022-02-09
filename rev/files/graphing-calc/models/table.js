@@ -1,4 +1,3 @@
-
 define('graphing-calc/models/table', ["require", "exports", "core/math/rational-arithmetic-sequence", "tslib", "core/types/styles", "core/lib/dragmode", "./abstract-item", "underscore", "core/lib/label", "core/math/evaluate-single-expression", "core/math/distance", "core/lib/deepCopy", "core/lib/copy-properties", "graphing-calc/models/list", "core/graphing-calc/json/table", "core/graphing-calc/json/table", "core/graphing-calc/json/table", "core/lib/validate-color"], function(require, e, o, n, l, t, r, a, i, u, s, d, c, m, p, f, v, g) {
     "use strict";
     function h(e, o, n, l) {

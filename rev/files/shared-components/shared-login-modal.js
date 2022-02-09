@@ -1,4 +1,3 @@
-
 define('shared-components/shared-login-modal', ["require", "exports", "tslib", "dcgview", "shared-components/modal", "./shared-cookie-notice", "shared/dcgviews/localize", "./shared-account-modal-errors", "loadcss!./shared-account-modal", "loadcss!./shared-login-modal"], function(require, e, t, n, o, r, s, a) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

@@ -1,4 +1,3 @@
-
 define('graphing/graphslayer', ["require", "exports", "./clipping", "./dasheddrawer", "./constants", "./viewport", "core/types/graphmode", "core/lib/color-helpers", "core/types/styles", "core/types/line-opacity", "core/types/point-opacity", "core/types/point-size", "./draw-image-to-ctx", "./svg-groups", "./svg-classes"], function(require, e, t, i, r, o, a, n, l, s, d, c, g, h, p) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

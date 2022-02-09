@@ -1,4 +1,3 @@
-
 define('core/math/parsenode/assignment', ['require', './base', './equation', './identifier', 'pjs'], function(require) {
     "use strict";
     var e = require("./base")

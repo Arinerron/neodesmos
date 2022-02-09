@@ -1,4 +1,3 @@
-
 define('shared-components/language-picker', ["require", "exports", "tslib", "dcgview", "loadcss!./language-picker", "loadcss!./btn-styles"], function(require, e, t, n) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

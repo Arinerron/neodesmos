@@ -1,4 +1,3 @@
-
 define('graphing-calc/models/list', ["require", "exports", "lib/color-distance", "tslib", "./expression", "./folder", "./table", "./text", "./helper-expression", "./image", "./ticker", "core/types/graphmode", "core/lib/color-helpers", "underscore", "core/lib/deepCopy", "../../lib/latex-search-helpers"], function(require, e, t, r, o, n, i, a, l, d, s, c, u, f, m, p) {
     "use strict";
     function _(e, t) {

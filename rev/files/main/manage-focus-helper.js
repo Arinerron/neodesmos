@@ -1,4 +1,3 @@
-
 define('main/manage-focus-helper', ["require", "exports", "underscore"], function(require, o, e) {
     "use strict";
     function n(o) {

@@ -1,4 +1,3 @@
-
 define('expressions/shell_view', ["require", "exports", "tslib", "dcgview", "./abstract-item-view"], function(require, e, t, n, i) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

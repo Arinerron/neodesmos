@@ -1,4 +1,3 @@
-
 define('main/load-graph-from-link', ["require", "exports", "core/graphing-calc/migrate-state", "tslib", "jquery", "core/lib/deepCopy"], function(require, t, e, r, a, o) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

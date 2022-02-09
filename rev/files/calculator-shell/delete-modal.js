@@ -1,4 +1,3 @@
-
 define('calculator-shell/delete-modal', ["require", "exports", "tslib", "dcgview", "../lib/fluent-bundle-sequence", "../shared-components/modal", "loadcss!./delete-modal"], function(require, e, t, n, r, o) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

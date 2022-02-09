@@ -1,4 +1,3 @@
-
 define('keypad/control-bar', ["require", "exports", "tslib", "dcgview", "./dcgview-keypad", "loadcss!./control-bar"], function(require, e, t, r, n) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

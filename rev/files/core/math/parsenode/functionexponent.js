@@ -1,4 +1,3 @@
-
 define('core/math/parsenode/functionexponent', ['require', 'pjs', './expression', 'core/math/ir/builtin-table'], function(require) {
     "use strict";
     var e = require("pjs")

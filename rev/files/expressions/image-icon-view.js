@@ -1,4 +1,3 @@
-
 define('expressions/image-icon-view', ["require", "exports", "tslib", "lib/coerce-url", "dcgview", "main/manage-focus-helper", "../dcgview-helpers/tooltipped-error", "./circular-icon-view", "jquery.handleevent", "loadcss!./image-icon-view"], function(require, e, t, o, n, i, r, l) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

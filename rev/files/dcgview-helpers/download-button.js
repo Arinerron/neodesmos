@@ -1,4 +1,3 @@
-
 define('dcgview-helpers/download-button', ["require", "exports", "tslib", "dcgview", "browser", "loadcss!./download-button"], function(require, t, o, n, e) {
     "use strict";
     function i() {

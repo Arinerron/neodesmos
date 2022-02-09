@@ -1,4 +1,3 @@
-
 define('console', ['require'], function(require) {
     var o = function() {}
       , n = {};

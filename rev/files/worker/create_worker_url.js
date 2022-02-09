@@ -1,4 +1,3 @@
-
 define('worker/create_worker_url', ['require', 'worker_src'], function(require) {
     "use strict";
     var e = require("worker_src");

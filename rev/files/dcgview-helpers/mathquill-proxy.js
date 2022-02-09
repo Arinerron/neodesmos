@@ -1,4 +1,3 @@
-
 define('dcgview-helpers/mathquill-proxy', ["require", "exports", "dcgview-helpers/mathquill-view"], function(require, t, e) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

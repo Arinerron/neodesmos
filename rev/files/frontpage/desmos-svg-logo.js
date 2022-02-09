@@ -1,4 +1,3 @@
-
 define('frontpage/desmos-svg-logo', ["require", "exports", "tslib", "dcgview"], function(require, c, n, e) {
     "use strict";
     Object.defineProperty(c, "__esModule", {

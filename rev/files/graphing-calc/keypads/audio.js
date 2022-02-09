@@ -1,4 +1,3 @@
-
 define('graphing-calc/keypads/audio', ["require", "exports", "tslib", "dcgview", "./dcgview-graphing", "keypad/keys", "keypad/keypad", "keypad/btn", "../../shared-components/tooltip", "graphing/audiograph", "shared/dcgviews/localize", "loadcss!./audio"], function(require, e, t, n, o, a, c, i, r, s, l) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

@@ -1,4 +1,3 @@
-
 define('expressions/expression-menus/label-orientation-view', ["require", "exports", "tslib", "dcgview", "core/types/label-orientations", "graphing-calc/models/expression", "loadcss!./label-orientation-view", "loadcss!toggle"], function(require, t, e, i, n, o) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

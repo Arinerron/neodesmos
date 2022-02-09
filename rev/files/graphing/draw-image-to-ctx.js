@@ -1,4 +1,3 @@
-
 define('graphing/draw-image-to-ctx', ["require", "exports", "graphing-calc/models/list", "./svg-classes"], function(require, e, a, t) {
     "use strict";
     var r;

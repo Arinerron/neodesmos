@@ -1,4 +1,3 @@
-
 define('main/graphs_controller', ["require", "exports", "main/graph", "main/calculator_3d_backend", "main/geometry_backend", "lib/random_hash", "tslib", "jquery", "underscore", "main/calculator_backend", "lib/parse-json-errors", "lib/underscore-shim", "bugsnag", "analytics/looker"], function(require, e, t, r, a, i, o, n, s, h, p, c, g, d) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

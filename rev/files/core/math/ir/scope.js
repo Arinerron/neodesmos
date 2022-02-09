@@ -1,4 +1,3 @@
-
 define('core/math/ir/scope', ["require", "exports"], function(require, e) {
     "use strict";
     function o(e, o) {

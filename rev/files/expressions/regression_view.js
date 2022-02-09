@@ -1,4 +1,3 @@
-
 define('expressions/regression_view', ["require", "exports", "tslib", "dcgview", "core/lib/label", "dcgview-helpers/static-mathquill-view", "../shared-components/tooltip", "loadcss!regression"], function(require, e, t, n, r, o, s) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

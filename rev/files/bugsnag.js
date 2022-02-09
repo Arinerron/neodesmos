@@ -1,4 +1,3 @@
-
 define('bugsnag', ["require", "exports", "tslib"], function(require, e, r) {
     "use strict";
     var t, i;

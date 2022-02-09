@@ -1,4 +1,3 @@
-
 define('core/lib/count-latex-tokens', ["require", "exports", "core/math/parser/latex-lexer"], function(require, e, r) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

@@ -1,4 +1,3 @@
-
 define('core/math/parsenode/slider', ['require', 'pjs', './assignment', './identifier'], function(require) {
     "use strict";
     var i = require("pjs")

@@ -1,4 +1,3 @@
-
 define('mygraphs/item', ["require", "exports", "tslib", "dcgview", "jquery", "../shared-components/tooltip", "loadcss!./item"], function(require, e, t, n, r, o) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

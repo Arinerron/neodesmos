@@ -1,4 +1,3 @@
-
 define('graphing/grapher', ["require", "exports", "main/graph_settings", "./canvaslayer", "./poidotslayer", "./gridlayer", "./viewportcontroller", "./poicontroller", "vendor/canvas2svg", "dcgview", "jquery", "underscore", "./viewport", "./screen", "./graphsketch", "./projection", "underscore_model", "./audiograph", "./canvas-braille", "./braille-size-options", "core/lib/deepCopy", "core/lib/default-spec", "core/graphing-calc/json/graph-settings", "graphing/tonegenerator", "./movablepointslayer", "./poilabelslayer", "./imagelayer", "./clickableobject-layer", "./svg-classes", "./svg-groups", "core/types/graphmode", "./graphslayer"], function(require, e, t, r, i, s, a, o, n, h, c, p, l, d, g, u, y, w, v, f, _, b, m, L, S, k, R, P, x, C, j, O) {
     "use strict";
     function I() {

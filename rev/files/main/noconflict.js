@@ -1,4 +1,3 @@
-
 define('main/noconflict', ['require', 'jquery', 'underscore'], function(require) {
     "use strict";
     var e = require("jquery")

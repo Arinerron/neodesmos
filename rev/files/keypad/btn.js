@@ -1,4 +1,3 @@
-
 define('keypad/btn', ["require", "exports", "tslib", "dcgview", "loadcss!./btn"], function(require, t, e, s) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

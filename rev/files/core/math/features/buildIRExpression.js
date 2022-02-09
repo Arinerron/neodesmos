@@ -1,4 +1,3 @@
-
 define('core/math/features/buildIRExpression', ['require', 'core/math/ir/build-ir', 'core/math/parsenode/base', 'core/math/parsenode/irexpression', 'core/math/errormsg', 'core/math/parsenode/error'], function(require) {
     "use strict";
     var r = require("core/math/ir/build-ir").buildIR

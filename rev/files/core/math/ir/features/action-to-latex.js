@@ -1,4 +1,3 @@
-
 define('core/math/ir/features/action-to-latex', ["require", "exports", "../../../lib/label", "./value-to-latex"], function(require, e, t, a) {
     "use strict";
     function o(e, o) {

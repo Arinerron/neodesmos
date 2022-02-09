@@ -1,4 +1,3 @@
-
 define('lib/named-colors', ['require'], function(require) {
     "use strict";
     return {

@@ -1,4 +1,3 @@
-
 define('keypad/control-toggle', ["require", "exports", "tslib", "lib/aria", "core/lib/color-helpers", "dcgview", "./dcgview-keypad", "loadcss!./control-toggle"], function(require, t, e, o, r, l, a) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

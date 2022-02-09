@@ -1,4 +1,3 @@
-
 define('expressions/item-settings-view', ["require", "exports", "tslib", "dcgview", "keys", "underscore", "jquery", "./expression-menus/expression-options-menu-view", "./expression-menus/table-options-menu-view", "./image_options_view", "./slider-options-view", "loadcss!./item-settings-view"], function(require, t, e, o, i, n, s, r, c, p, l) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

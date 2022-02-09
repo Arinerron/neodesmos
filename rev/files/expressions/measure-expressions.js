@@ -1,4 +1,3 @@
-
 define('expressions/measure-expressions', ["require", "exports", "jquery"], function(require, t, e) {
     "use strict";
     function n(t) {

@@ -1,4 +1,3 @@
-
 define('core/math/parsenode/list', ['require', 'pjs', './expression', 'core/math/types'], function(require) {
     "use strict";
     var t = require("pjs")

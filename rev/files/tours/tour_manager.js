@@ -1,4 +1,3 @@
-
 define('tours/tour_manager', ['require', 'pjs', './trip'], function(require) {
     "use strict";
     var t = require("pjs")

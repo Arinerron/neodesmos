@@ -1,4 +1,3 @@
-
 define('underscore_model', ['require', 'underscore', 'pjs'], function(require) {
     var e = require("underscore");
     return {

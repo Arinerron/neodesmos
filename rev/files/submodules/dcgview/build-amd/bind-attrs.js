@@ -1,4 +1,3 @@
-
 define('submodules/dcgview/build-amd/bind-attrs', ["./attr-event-handler", "./attr-generic", "./is-event-handler", "./custom-attributes", "./bindings", "./warnings"], function(t, n, i, e, u, a) {
     "use strict";
     function r(t) {

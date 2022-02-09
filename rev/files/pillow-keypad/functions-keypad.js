@@ -1,4 +1,3 @@
-
 define('pillow-keypad/functions-keypad', ["require", "exports", "tslib", "dcgview", "keypad/keys", "keypad/keypad", "keypad/row", "./dcgview-pillow-keypad"], function(require, e, t, i, s, l, n, a) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

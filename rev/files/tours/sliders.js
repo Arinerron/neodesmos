@@ -1,4 +1,3 @@
-
 define('tours/sliders', ['require', 'pjs', './base_tour', 'predicates/common'], function(require) {
     "use strict";
     var e = require("pjs")

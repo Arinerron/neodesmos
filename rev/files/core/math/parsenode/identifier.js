@@ -1,4 +1,3 @@
-
 define('core/math/parsenode/identifier', ['require', 'pjs', './expression', 'core/lib/label', 'core/math/parser/input-span'], function(require) {
     "use strict";
     var t = require("pjs")

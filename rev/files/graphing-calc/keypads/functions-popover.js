@@ -1,4 +1,3 @@
-
 define('graphing-calc/keypads/functions-popover', ["require", "exports", "tslib", "dcgview", "./dcgview-graphing", "keypad/keys", "loadcss!./functions-popover"], function(require, t, e, i, n, r) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

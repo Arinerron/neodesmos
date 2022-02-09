@@ -1,4 +1,3 @@
-
 define('core/math/parsenode/updaterule', ['require', './expression', 'pjs'], function(require) {
     "use strict";
     var e = require("./expression");

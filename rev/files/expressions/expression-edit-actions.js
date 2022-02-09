@@ -1,4 +1,3 @@
-
 define('expressions/expression-edit-actions', ["require", "exports", "parser", "tslib", "dcgview", "core/lib/dragmode", "core/types/styles", "graphing-calc/models/expression", "graphing-calc/models/abstract-item", "lib/aria", "../shared-components/tooltip", "loadcss!./expression-edit-actions"], function(require, e, t, n, o, i, r, l, a, s, c) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

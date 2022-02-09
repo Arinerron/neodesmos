@@ -1,4 +1,3 @@
-
 define('tours/all_tours', ['require', 'tours/sliders', 'tours/scatter_plot', 'tours/function_table', 'tours/restrictions', 'tours/regressions', 'tours/lists', 'tours/folders', 'tours/derivatives', 'underscore'], function(require) {
     "use strict";
     var e = require("tours/sliders")

@@ -1,4 +1,3 @@
-
 define('api/basic', ["require", "exports", "tslib", "dcgview", "./abstract", "main/shared-worker-pool", "basic/controller", "basic/main", "core/lib/color-helpers", "underscore_model", "./util", "core/lib/deepCopy", "lib/console"], function(require, e, t, o, r, i, n, a, s, l, c, d, p) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

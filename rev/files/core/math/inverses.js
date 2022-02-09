@@ -1,4 +1,3 @@
-
 define('core/math/inverses', [], function() {
     "use strict";
     var c = {};

@@ -1,4 +1,3 @@
-
 define('dcgview-helpers/static-mathquill-view', ["require", "exports", "tslib", "dcgview", "vendor/mathquill", "jquery", "lib/conditional_blur", "loadcss!./static-mathquill-view"], function(require, t, i, a, e, l, s) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

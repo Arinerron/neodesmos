@@ -1,4 +1,3 @@
-
 define('submodules/dcgview/build-amd/if', ["./create-class", "./const", "./switch"], function(t, e, n) {
     "use strict";
     function i(t) {

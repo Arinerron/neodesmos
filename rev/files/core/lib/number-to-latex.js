@@ -1,4 +1,3 @@
-
 define('core/lib/number-to-latex', ["require", "exports"], function(require, e) {
     "use strict";
     function r(e) {

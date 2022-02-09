@@ -1,4 +1,3 @@
-
 define('basic/main', ["require", "exports", "tslib", "browser", "keys", "dcgview", "./dcgview-basic", "jquery", "./keypad/fourfunction-control-bar", "./keypad/single-expression-fourfunction-control-bar", "./keypad/scientific-control-bar", "./keypad/single-expression-scientific-control-bar", "./keypad/fourfunction-keypad", "./keypad/single-expression-fourfunction-keypad", "./keypad/single-expression-scientific-keypad", "./keypad/scientific-keypad", "./keypad/braille-keypad", "./basic-list-view", "lib/aria", "touchtracking", "loadcss!desmos-icons", "loadcss!./main", "loadcss!dcg-normalize"], function(require, e, r, t, n, o, l, c, i, a, s, u, d, p, f, m, y, h, g, E) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

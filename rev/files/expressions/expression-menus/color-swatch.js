@@ -1,4 +1,3 @@
-
 define('expressions/expression-menus/color-swatch', ["require", "exports", "lib/color-distance", "tslib", "dcgview", "loadcss!./color-swatch"], function(require, t, o, r, n) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

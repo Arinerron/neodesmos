@@ -1,4 +1,3 @@
-
 define('main/calculator_3d_backend', ['require', 'main/graph', './backend'], function(require) {
     "use strict";
     var r = require("main/graph")

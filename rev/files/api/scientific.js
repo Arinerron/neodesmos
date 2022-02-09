@@ -1,4 +1,3 @@
-
 define('api/scientific', ["require", "exports", "tslib", "./basic", "core/lib/deepCopy", "./util"], function(require, e, i, n, t, a) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

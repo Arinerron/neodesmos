@@ -1,4 +1,3 @@
-
 define('graphing/audiograph', ["require", "exports", "tslib", "browser", "keys", "lib/aria", "graphing/audiographnavigator", "graphing/tonegenerator", "core/types/graphmode", "core/lib/label", "core/math/poi-type", "graphing-calc/models/expression", "graphing-calc/models/table", "expressions/colors", "lib/mathspeak"], function(require, t, e, r, o, i, a, n, s, l, c, p, u, h, d) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

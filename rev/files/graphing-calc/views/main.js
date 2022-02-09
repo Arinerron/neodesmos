@@ -1,4 +1,3 @@
-
 define('graphing-calc/views/main', ["require", "exports", "tslib", "touchtracking", "ipad.scrollfix", "dcgview", "jquery", "../../expressions/list-view", "graphing-calc/keypads/main", "main/pillbox-view", "main/toast-view", "main/disable-dragdrop-events", "main/manage-focus-helper", "../../shared-components/tooltip"], function(require, t, e, o, r, n, i, c, l, a, s, g, p, d) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

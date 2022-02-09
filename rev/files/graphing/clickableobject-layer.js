@@ -1,4 +1,3 @@
-
 define('graphing/clickableobject-layer', ["require", "exports", "tslib", "dcgview", "core/types/graphmode", "jquery", "graphing-calc/models/expression", "graphing-calc/models/image", "lib/mathspeak"], function(require, e, t, r, i, s, n, o, d) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

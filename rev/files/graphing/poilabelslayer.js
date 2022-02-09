@@ -1,4 +1,3 @@
-
 define('graphing/poilabelslayer', ["require", "exports", "core/vendor/d3-color", "tslib", "dcgview", "jquery", "core/lib/label", "core/types/graphmode", "core/types/point-size", "core/math/poi-type", "./constants", "./poi", "./automatic-label-placer", "core/lib/color-helpers", "core/math/interpolatedlabel", "../dcgview-helpers/static-mathquill-view", "../dcgview-helpers/mathquill-view", "core/graphing-calc/json/expression", "graphing-calc/models/expression", "graphing-calc/models/abstract-item", "graphing/canvas-labels", "graphing/movablepointslayer", "./svg-groups", "main/mathquill-operators", "core/types/point-opacity"], function(require, e, t, r, o, a, n, i, l, c, s, d, h, p, u, b, g, f, v, y, L, m, x, I, O) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

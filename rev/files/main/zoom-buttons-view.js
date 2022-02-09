@@ -1,4 +1,3 @@
-
 define('main/zoom-buttons-view', ["require", "exports", "tslib", "dcgview", "../shared-components/tooltip", "loadcss!pillboxes"], function(require, t, o, n, e) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

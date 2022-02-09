@@ -1,4 +1,3 @@
-
 define('main/propagate_selection', ['require', 'graphing-calc/models/table'], function(require) {
     "use strict";
     var e = require("graphing-calc/models/table");

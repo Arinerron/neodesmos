@@ -1,4 +1,3 @@
-
 define('core/graphing-calc/diffs/calculate-diff', ["require", "exports", "underscore", "./longest-subsequence"], function(require, r, e, i) {
     "use strict";
     var n;

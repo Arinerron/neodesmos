@@ -1,4 +1,3 @@
-
 define('mygraphs/syncing-status-bar', ["require", "exports", "tslib", "dcgview", "loadcss!./syncing-status-bar"], function(require, t, e, n) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

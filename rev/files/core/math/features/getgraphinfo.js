@@ -1,4 +1,3 @@
-
 define('core/math/features/getgraphinfo', ['require', 'parsenodes', 'core/math/domaintypes', 'core/math/types', 'core/lib/color-helpers'], function(require) {
     "use strict";
     var e = require("parsenodes")

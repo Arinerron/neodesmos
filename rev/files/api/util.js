@@ -1,4 +1,3 @@
-
 define('api/util', ["require", "exports", "lib/console"], function(require, e, a) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

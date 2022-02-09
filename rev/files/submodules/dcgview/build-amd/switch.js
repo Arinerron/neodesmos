@@ -1,4 +1,3 @@
-
 define('submodules/dcgview/build-amd/switch', ["./create-class", "./const", "./mounting"], function(e, t, i) {
     "use strict";
     function n(e) {

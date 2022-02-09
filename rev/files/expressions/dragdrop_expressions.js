@@ -1,4 +1,3 @@
-
 define('expressions/dragdrop_expressions', ["require", "exports", "tslib", "jquery", "expressions/measure-expressions", "jquery.handleevent"], function(require, e, t, o, r) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

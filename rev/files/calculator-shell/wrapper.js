@@ -1,4 +1,3 @@
-
 define('calculator-shell/wrapper', ["require", "exports", "tslib", "dcgview", "./view", "./language-menu", "./help-menu", "./share-menu", "./account-menu", "./graph-actions-menu"], function(require, e, n, r, t, o, l, c, u, p) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

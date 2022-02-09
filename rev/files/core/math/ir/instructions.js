@@ -1,4 +1,3 @@
-
 define('core/math/ir/instructions', ["require", "exports", "./opcodes"], function(require, e, n) {
     "use strict";
     function t(e) {

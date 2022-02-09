@@ -1,4 +1,3 @@
-
 define('expressions/ticker', ["require", "exports", "tslib", "dcgview", "../dcgview-helpers/mathquill-view", "main/mathquill-operators", "../dcgview-helpers/tooltipped-error", "../graphing-calc/models/ticker", "./promptslider_view", "./circular-icon-view", "../shared-components/tooltip", "lib/conditional_blur", "loadcss!./ticker"], function(require, e, t, n, r, o, i, c, l, a, s, d) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

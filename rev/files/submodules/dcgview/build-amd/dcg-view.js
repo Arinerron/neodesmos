@@ -1,4 +1,3 @@
-
 define('submodules/dcgview/build-amd/dcg-view', ["./create-element", "./create-class", "./mounting", "./spread", "./const", "./custom-attributes", "./attr-style", "./attr-class", "./attr-lifecycle", "./components", "./warnings", "./bind-text", "./class"], function(t, e, d, a, u, n, o, l, r, i, s, m, f) {
     "use strict";
     function c(t) {

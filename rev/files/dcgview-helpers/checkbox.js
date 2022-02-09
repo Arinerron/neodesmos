@@ -1,4 +1,3 @@
-
 define('dcgview-helpers/checkbox', ["require", "exports", "tslib", "dcgview", "jquery", "loadcss!./checkbox"], function(require, e, s, c, t) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

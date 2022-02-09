@@ -1,4 +1,3 @@
-
 define('core/math/features/getgraphmode', ['require', 'parsenodes', 'core/types/graphmode', 'core/lib/dragmode', 'core/lib/dragmode', 'core/math/types'], function(require) {
     "use strict";
     var e = require("parsenodes")

@@ -1,4 +1,3 @@
-
 define('main/blank_state', ["require", "exports", "core/graphing-calc/migrate-state"], function(require, e, r) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

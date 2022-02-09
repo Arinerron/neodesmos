@@ -1,4 +1,3 @@
-
 define('core/math/parsenode/table', ['require', 'pjs', './base'], function(require) {
     "use strict";
     return require("pjs")(require("./base"), function(t, n) {

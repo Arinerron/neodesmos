@@ -1,4 +1,3 @@
-
 define('main/settings-view', ["require", "exports", "tslib", "keys", "scroll_helpers", "dcgview", "dcgview-helpers/static-mathquill-view", "dcgview-helpers/mathquill-view", "jquery", "core/graphing-calc/json/graph-settings", "core/math/evaluate-single-expression", "graphing/viewport", "dcgview-helpers/checkbox", "main/manage-focus-helper", "main/mathquill-operators", "../shared-components/mathquill-braille-wrapper", "../expressions/expression_view", "../shared-components/tooltip", "loadcss!./settings-view"], function(require, t, e, n, r, o, i, s, a, c, l, g, d, u, p, h, m, b) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

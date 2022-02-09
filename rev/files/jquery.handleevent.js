@@ -1,4 +1,3 @@
-
 define('jquery.handleevent', ['require', 'jquery'], function(require) {
     var t = require("jquery")
       , e = "_*_";

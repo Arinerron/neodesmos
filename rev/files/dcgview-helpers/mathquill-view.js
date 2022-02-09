@@ -1,4 +1,3 @@
-
 define('dcgview-helpers/mathquill-view', ["require", "exports", "tslib", "keys", "browser", "dcgview", "vendor/mathquill", "jquery", "./static-mathquill-view", "../core/lib/count-latex-tokens", "loadcss!./mathquill-view"], function(require, e, t, i, o, a, n, s, r, p) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

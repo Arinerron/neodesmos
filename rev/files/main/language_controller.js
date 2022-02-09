@@ -1,4 +1,3 @@
-
 define('main/language_controller', ["require", "exports", "lib/i18n", "lib/urlparser"], function(require, t, e, n) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

@@ -1,4 +1,3 @@
-
 define('submodules/dcgview/build-amd/if-else', ["./switch-union"], function(e) {
     "use strict";
     function t(e) {

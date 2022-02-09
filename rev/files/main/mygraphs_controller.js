@@ -1,4 +1,3 @@
-
 define('main/mygraphs_controller', ['require', 'pjs', 'jquery', 'underscore_model', 'lib/aria', 'lib/conditional_blur', 'analytics/looker'], function(require) {
     "use strict";
     var t = require("pjs")

@@ -1,4 +1,3 @@
-
 define('expressions/image_options_view', ["require", "exports", "tslib", "dcgview", "graphing-calc/models/image", "graphing-calc/models/expression", "dcgview-helpers/checkbox", "./circular-icon-view", "expressions/expression-menus/clickable", "lib/coerce-url"], function(require, e, t, n, o, r, i, c, a, l) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

@@ -1,4 +1,3 @@
-
 define('core/math/features/substitute', ['require', 'parsenodes'], function(require) {
     "use strict";
     var t = require("parsenodes")

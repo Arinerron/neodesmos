@@ -1,4 +1,3 @@
-
 define('core/math/features/getMoveStrategy', ['require', 'parsenodes', 'core/math/types', 'core/math/maybe-rational', 'core/math/functions'], function(require) {
     "use strict";
     var e = require("parsenodes")

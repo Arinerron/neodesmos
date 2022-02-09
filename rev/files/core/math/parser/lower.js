@@ -1,4 +1,3 @@
-
 define('core/math/parser/lower', ["require", "exports", "core/math/inverses", "tslib", "core/math/errormsg", "./input-span", "./surface-node", "../maybe-rational"], function(require, e, r, t, a, n, s, i) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

@@ -1,4 +1,3 @@
-
 define('submodules/dcgview/build-amd/class', ["./create-class"], function(t) {
     "use strict";
     function e(t) {

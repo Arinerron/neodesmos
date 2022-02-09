@@ -1,4 +1,3 @@
-
 define('basic/dcgview-basic', ["require", "exports", "tslib", "dcgview"], function(require, t, i, e) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

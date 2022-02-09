@@ -1,4 +1,3 @@
-
 define('lib/rounding', ["require", "exports", "core/math/distance"], function(require, e, t) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

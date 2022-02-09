@@ -1,4 +1,3 @@
-
 define('core/math/parser/latex-lexer', ["require", "exports", "./char-codes", "./input-span"], function(require, e, t, n) {
     "use strict";
     function r(e, t, n) {

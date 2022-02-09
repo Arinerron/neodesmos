@@ -1,4 +1,3 @@
-
 define('core/graphing-calc/diffs/apply-diff', ["require", "exports", "underscore", "../../lib/deepCopy"], function(require, e, r, n) {
     "use strict";
     function t(e, n) {

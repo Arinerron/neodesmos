@@ -1,4 +1,3 @@
-
 define('expressions/expression-icon-view', ["require", "exports", "tslib", "dcgview", "core/lib/dragmode", "core/types/styles", "core/math/comparators", "graphing-calc/models/abstract-item", "core/math/expression-types", "graphing-calc/models/expression", "../dcgview-helpers/tooltipped-error", "./play-pause-icon-view", "./circular-icon-view", "main/manage-focus-helper", "./action-icon-view", "jquery.handleevent"], function(require, e, o, t, i, r, n, l, s, a, d, c, p, h, u) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

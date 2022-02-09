@@ -1,4 +1,3 @@
-
 define('tours/trip', ['require', 'jquery', 'pjs', 'mathquill', 'scroll_helpers', 'bugsnag'], function(require) {
     "use strict";
     var t = require("jquery")

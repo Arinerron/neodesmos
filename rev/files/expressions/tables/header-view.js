@@ -1,4 +1,3 @@
-
 define('expressions/tables/header-view', ["require", "exports", "tslib", "keys", "jquery", "browser", "dcgview", "./table_icon_view", "dcgview-helpers/mathquill-view", "dcgview-helpers/static-mathquill-view", "underscore", "graphing-calc/models/table", "core/lib/dragmode", "main/mathquill-operators", "../../shared-components/mathquill-braille-wrapper", "../expression_view"], function(require, e, t, n, o, l, r, i, a, c, s, d, u, h, p, g) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

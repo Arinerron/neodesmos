@@ -1,4 +1,3 @@
-
 define('core/math/parsenode/equation', ['require', './base', 'pjs', './expressionTypes', 'core/math/parsenode/comparator'], function(require) {
     "use strict";
     var s = require("./base")

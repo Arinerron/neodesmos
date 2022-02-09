@@ -1,4 +1,3 @@
-
 define('submodules/dcgview/build-amd/spread', [], function() {
     "use strict";
     return function(r) {

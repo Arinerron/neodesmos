@@ -1,4 +1,3 @@
-
 define('core/math/policyGraphing', ["require", "exports", "./builtinframe", "core/types/graphmode"], function(require, t, r, e) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

@@ -1,4 +1,3 @@
-
 define('lib/selectable-input', ["require", "exports", "tslib", "dcgview", "browser", "jquery", "loadcss!./selectable-input"], function(require, t, e, n, r, o) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

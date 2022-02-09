@@ -1,4 +1,3 @@
-
 define('basic/keypad/scientific-control-bar', ["require", "exports", "tslib", "dcgview", "keypad/control-bar", "keypad/control-btn", "basic/dcgview-basic", "keypad/control-toggle", "./settings-control-button"], function(require, t, n, e, r, o, a, c, l) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

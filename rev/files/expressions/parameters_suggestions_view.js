@@ -1,4 +1,3 @@
-
 define('expressions/parameters_suggestions_view', ["require", "exports", "tslib", "dcgview", "graphing-calc/models/expression", "loadcss!./parameter_suggestions_view"], function(require, e, t, r, a) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

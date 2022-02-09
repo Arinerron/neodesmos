@@ -1,4 +1,3 @@
-
 define('toplevel/mathquill', ['require', 'testbridge', 'mathquill_src', 'loadcss!Symbola-basic', 'loadcss!vendor/mathquill/mathquill-basic'], function(require) {
     "use strict";
     return require("testbridge"),

@@ -1,4 +1,3 @@
-
 define('expressions/expression-menus/colors-only', ["require", "exports", "tslib", "./base-menu-section", "dcgview", "./color-picker", "graphing-calc/models/expression"], function(require, e, o, t, n, s, i) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

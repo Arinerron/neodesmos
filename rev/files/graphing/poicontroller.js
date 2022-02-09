@@ -1,4 +1,3 @@
-
 define('graphing/poicontroller', ['require', 'jquery', 'core/math/distance', 'lib/rounding', 'core/types/graphmode', 'lib/conditional_blur', 'keys', 'lib/aria', 'core/lib/label', 'expressions/colors', 'graphing-calc/models/image', 'graphing-calc/models/expression', '../geometry/math/polygon'], function(require) {
     "use strict";
     var e = require("jquery")

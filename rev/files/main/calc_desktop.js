@@ -1,4 +1,3 @@
-
 define('main/calc_desktop', ['require', 'jquery', 'browser', 'main/load_data', 'config', 'loadcss!print', 'lib/i18n', 'main/graph', 'text!example_graphs', 'api/calculator', 'main/external-login-popup', 'analytics/looker', 'analytics/usage-monitor', 'dcgview', 'calculator-shell/wrapper', 'calculator-shell/modals', 'mygraphs/wrapper', 'main/disable-dragdrop-events', 'vendor/bugsnag', 'bugsnag', './instantiate-top-level-components'], function(require) {
     "use strict";
     var e = require("jquery")

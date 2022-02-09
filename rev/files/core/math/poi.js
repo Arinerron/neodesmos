@@ -1,4 +1,3 @@
-
 define('core/math/poi', ["require", "exports", "core/math/distance"], function(require, i, t) {
     "use strict";
     function r(i, r) {

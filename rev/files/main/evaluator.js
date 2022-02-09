@@ -1,4 +1,3 @@
-
 define('main/evaluator', ["require", "exports", "worker/workerpoolconnection", "worker/workerpool", "core/lib/deepCopy", "core/math/functions", "underscore"], function(require, e, t, n, o, s, i) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

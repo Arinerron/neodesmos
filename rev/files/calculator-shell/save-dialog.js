@@ -1,4 +1,3 @@
-
 define('calculator-shell/save-dialog', ["require", "exports", "tslib", "dcgview", "./modal", "jquery"], function(require, t, e, n, l, r) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

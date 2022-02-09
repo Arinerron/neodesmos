@@ -1,4 +1,3 @@
-
 define('shared-header/accounts', ["require", "exports", "tslib", "dcgview", "jquery"], function(require, n, e, t, c) {
     "use strict";
     Object.defineProperty(n, "__esModule", {

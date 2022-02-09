@@ -1,4 +1,3 @@
-
 define('main/shared-clock-bus', ["require", "exports", "main/raf-loop", "underscore_model"], function(require, e, n, r) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

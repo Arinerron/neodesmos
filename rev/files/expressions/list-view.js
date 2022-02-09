@@ -1,4 +1,3 @@
-
 define('expressions/list-view', ["require", "exports", "tslib", "touchtracking", "keys", "dcgview", "jquery", "underscore", "lib/conditional_blur", "./expression_view", "./text_view", "./table-view", "./folder-view", "./image-view", "./shell_view", "./drag_container_view", "main/data_helpers", "./new_expression_view", "./expressions-header", "main/load-graph-from-link", "lib/get-clipboard-data", "graphing-calc/models/abstract-item", "graphing-calc/models/list", "graphing-calc/models/expression", "./exp-list-resizer", "./item-settings-view", "./expression-search-bar", "./ticker", "loadcss!./list-view", "loadcss!expressions", "jquery.handleevent"], function(require, e, t, n, o, r, i, l, s, a, c, p, d, u, f, h, g, m, y, v, x, E, b, D, w, k, P, L) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

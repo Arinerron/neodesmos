@@ -1,4 +1,3 @@
-
 define('worker/fakeworker', ['require', 'worker/workercore'], function(require) {
     "use strict";
     var e = require("worker/workercore");

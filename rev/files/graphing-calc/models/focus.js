@@ -1,4 +1,3 @@
-
 define('graphing-calc/models/focus', ["require", "exports", "./expression", "./list"], function(require, e, t, o) {
     "use strict";
     function i(e, t, o) {

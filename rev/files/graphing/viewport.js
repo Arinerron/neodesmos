@@ -1,4 +1,3 @@
-
 define('graphing/viewport', ["require", "exports"], function(require, t) {
     "use strict";
     function i(t, i) {

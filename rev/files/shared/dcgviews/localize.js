@@ -1,4 +1,3 @@
-
 define('shared/dcgviews/localize', ["require", "exports", "tslib", "dcgview", "vendor/html-parse-stringify2", "l10n-tools/localize-serializer", "lib/i18n"], function(require, e, t, n, i, r, a) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

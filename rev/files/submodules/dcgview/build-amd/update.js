@@ -1,4 +1,3 @@
-
 define('submodules/dcgview/build-amd/update', ["./bindings", "./warnings"], function(t, i) {
     "use strict";
     function e(t) {

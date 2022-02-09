@@ -1,4 +1,3 @@
-
 define('core/math/builtinconstants', ['require', 'core/math/parsenode/constant', 'core/math/maybe-rational'], function(require) {
     "use strict";
     var t = require("core/math/parsenode/constant")

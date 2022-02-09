@@ -1,4 +1,3 @@
-
 define('graphing/tonegenerator', ["require", "exports", "bin!./poi.mp3", "browser", "bugsnag", "core/types/graphmode", "graphing/clipping"], function(require, e, t, n, i, a, r) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

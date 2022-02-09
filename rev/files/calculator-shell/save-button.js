@@ -1,4 +1,3 @@
-
 define('calculator-shell/save-button', ["require", "exports", "tslib", "dcgview", "browser", "../shared-components/tooltip"], function(require, e, t, n, o, r) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

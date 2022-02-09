@@ -1,4 +1,3 @@
-
 define('lib/abraham-helpers', ["require", "exports", "abraham"], function(require, e, r) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

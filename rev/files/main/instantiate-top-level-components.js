@@ -1,4 +1,3 @@
-
 define('main/instantiate-top-level-components', ['require', 'config', 'underscore', 'main/user_controller', 'main/graphs_controller', 'main/language_controller', 'main/mygraphs_controller', 'tours/tour_controller', 'calculator-shell/controller', 'main/globalhotkeys', 'browser', 'ipad.scrollfix', 'loadcss!main', 'api/calculator'], function(require) {
     "use strict";
     var e = require("config")

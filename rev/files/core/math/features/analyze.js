@@ -1,4 +1,3 @@
-
 define('core/math/features/analyze', ['require', 'underscore', 'parsenodes', 'core/math/statementanalysis', 'core/math/builtin', 'core/math/builtinframe', 'core/math/errormsg', 'core/math/comparators', 'core/math/types', 'core/types/graphmode', 'core/math/expression-types', 'core/math/distribution-spec', 'core/math/workerconfig', 'core/math/ir/features/solve', 'core/math/ir/features/optimize-regression', 'core/math/ir/dependencies'], function(require) {
     "use strict";
     var e = require("underscore")

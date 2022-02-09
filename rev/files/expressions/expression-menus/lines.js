@@ -1,4 +1,3 @@
-
 define('expressions/expression-menus/lines', ["require", "exports", "tslib", "./base-menu-section", "dcgview", "expressions/toggle-view", "core/types/line-opacity", "dcgview-helpers/mathquill-view", "graphing-calc/models/expression", "graphing-calc/models/table", "core/types/line-width", "core/types/styles", "./color-picker", "../../shared-components/tooltip", "loadcss!toggle"], function(require, e, t, n, i, o, l, r, c, s, a, d, p, u) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

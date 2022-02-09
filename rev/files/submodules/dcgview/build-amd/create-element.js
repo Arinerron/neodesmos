@@ -1,4 +1,3 @@
-
 define('submodules/dcgview/build-amd/create-element', ["./dcg-element"], function(e) {
     "use strict";
     function r(e) {

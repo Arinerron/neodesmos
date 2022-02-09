@@ -1,4 +1,3 @@
-
 define('expressions/visualization_parameters_view', ["require", "exports", "tslib", "dcgview", "jquery", "keys", "graphing-calc/models/expression", "dcgview-helpers/checkbox", "dcgview-helpers/mathquill-view", "./parameters_suggestions_view", "main/mathquill-operators", "../shared-components/mathquill-braille-wrapper", "./expression_view", "loadcss!./visualization_parameters_view", "loadcss!toggle"], function(require, e, t, n, r, o, a, i, l, s, c, p, u) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

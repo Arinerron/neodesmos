@@ -1,4 +1,3 @@
-
 define('lib/restrict-focus', ["require", "exports", "keys", "jquery"], function(require, e, t, r) {
     "use strict";
     function i(e) {

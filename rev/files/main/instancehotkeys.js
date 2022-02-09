@@ -1,4 +1,3 @@
-
 define('main/instancehotkeys', ["require", "exports", "keys", "lib/aria", "jquery", "graphing-calc/models/expression", "browser", "touchtracking"], function(require, t, e, r, o, l, i, s) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

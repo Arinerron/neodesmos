@@ -1,4 +1,3 @@
-
 define('main/pillbox-view', ["require", "exports", "tslib", "dcgview", "./graphpaper-branding-view", "./settings-view", "./zoom-buttons-view", "./reset-button-view", "loadcss!pillboxes"], function(require, t, e, o, n, r, l, i) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

@@ -1,4 +1,3 @@
-
 define('core/math/context', ["require", "exports", "parser", "parsenodes", "./finddependencyorder", "./workerconfig", "./findIntersections", "core/vendor/d3-color", "./policyFourFunction", "./policyScientific", "./policyGraphing", "./frameFourFunction", "./frameScientific", "./frameSingleExpressionScientific", "./frameGraphing", "tslib", "core/math/errormsg", "core/math/finddependencyorder", "underscore", "./plotter", "core/types/graphmode", "./interpolatedlabel", "./expression-types", "./getCLSymbolMap", "./distribution-spec", "./maybe-rational", "core/lib/label", "./functions", "core/types/line-width", "core/types/point-opacity", "core/types/point-size", "./evaluationstate", "core/math/types", "./cache-stats", "./parsenode-from-value", "./ir/features/action-to-latex"], function(require, e, t, i, a, s, r, n, o, l, p, c, d, u, h, f, m, v, y, g, _, x, b, D, S, P, O, E, T, F, R, w, M, I, A, C) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

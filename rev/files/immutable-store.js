@@ -1,4 +1,3 @@
-
 define('immutable-store', ['require', 'underscore', 'core/lib/deepCopy'], function(require) {
     "use strict";
     var t = require("underscore")

@@ -1,4 +1,3 @@
-
 define('main/calc_headless', ["require", "exports", "main/graph_settings", "main/evaluator", "underscore_model", "main/controller"], function(require, t, e, o, i, n) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

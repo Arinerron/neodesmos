@@ -1,4 +1,3 @@
-
 define('lib/app-bridge', ['require', 'jquery', 'underscore_model', 'browser', 'lib/conditional_blur', 'vendor/fake-xml-http-request', 'pjs', 'console', 'main/backend'], function(require) {
     "use strict";
     var e = require("jquery")

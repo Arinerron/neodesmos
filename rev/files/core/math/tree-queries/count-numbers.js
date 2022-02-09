@@ -1,4 +1,3 @@
-
 define('core/math/tree-queries/count-numbers', ["require", "exports"], function(require, e) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

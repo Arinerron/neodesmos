@@ -1,4 +1,3 @@
-
 define('calculator-shell/controller', ["require", "exports", "config", "jquery", "underscore", "flux", "browser", "keys", "bugsnag", "lib/i18n", "../analytics/looker", "../lib/parse-json-errors", "../lib/parse-query-params", "../api/graphing"], function(require, e, t, o, r, n, s, i, a, l, c, h, u, p) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

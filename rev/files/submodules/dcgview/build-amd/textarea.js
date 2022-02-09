@@ -1,4 +1,3 @@
-
 define('submodules/dcgview/build-amd/textarea', ["./create-class", "./spread"], function(t, e) {
     "use strict";
     function r(t) {

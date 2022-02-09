@@ -1,4 +1,3 @@
-
 define('expressions/expression-search-bar', ["require", "exports", "tslib", "dcgview", "../dcgview-helpers/mathquill-view", "main/mathquill-operators", "loadcss!./expression-search-bar"], function(require, e, t, r, o, n) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

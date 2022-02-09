@@ -1,4 +1,3 @@
-
 define('core/math/builtin-common', ["require", "exports", "./tofraction", "core/math/distance"], function(require, r, t, e) {
     "use strict";
     Object.defineProperty(r, "__esModule", {

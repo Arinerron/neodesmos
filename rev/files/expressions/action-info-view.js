@@ -1,4 +1,3 @@
-
 define('expressions/action-info-view', ["require", "exports", "tslib", "dcgview", "main/mathquill-operators", "dcgview-helpers/static-mathquill-view", "graphing-calc/models/focus", "loadcss!./action-info-view"], function(require, t, e, n, o, i, s) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

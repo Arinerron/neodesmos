@@ -1,4 +1,3 @@
-
 define('core/graphing-calc/migrations/8', ["require", "exports", "tslib", "core/lib/random-seed", "core/lib/deepCopy"], function(require, e, r, t, i) {
     "use strict";
     function a(e) {

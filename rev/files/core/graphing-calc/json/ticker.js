@@ -1,4 +1,3 @@
-
 define('core/graphing-calc/json/ticker', ["require", "exports", "tslib", "core/lib/default-spec"], function(require, e, t, n) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

@@ -1,4 +1,3 @@
-
 define('core/math/evaluationstate', ["require", "exports", "core/vendor/d3-color", "parsenodes", "tslib", "core/math/errormsg", "core/types/graphmode", "core/lib/label", "core/math/distribution-spec", "./types", "./ir/features/action-to-latex"], function(require, e, r, i, a, t, n, s, o, l, u) {
     "use strict";
     function d(e) {

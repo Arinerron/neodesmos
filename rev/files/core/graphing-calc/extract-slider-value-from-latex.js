@@ -1,4 +1,3 @@
-
 define('core/graphing-calc/extract-slider-value-from-latex', ["require", "exports", "parser", "core/math/builtinframe", "core/math/policyGraphing"], function(require, e, r, t, a) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

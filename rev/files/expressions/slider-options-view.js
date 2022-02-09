@@ -1,4 +1,3 @@
-
 define('expressions/slider-options-view', ["require", "exports", "tslib", "dcgview", "core/types/slider-loop-modes", "../shared-components/tooltip", "./slider_speed_view", "loadcss!toggle", "loadcss!./slider-options-view"], function(require, e, t, o, n, i, r) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

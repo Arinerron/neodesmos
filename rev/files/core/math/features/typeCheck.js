@@ -1,4 +1,3 @@
-
 define('core/math/features/typeCheck', ['require', 'parsenodes', 'core/math/types', 'core/math/errormsg'], function(require) {
     "use strict";
     var t = require("parsenodes")

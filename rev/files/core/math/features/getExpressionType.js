@@ -1,4 +1,3 @@
-
 define('core/math/features/getExpressionType', ['require', 'parsenodes', 'core/types/graphmode', 'core/math/expression-types', 'core/math/types'], function(require) {
     "use strict";
     var e = require("parsenodes")

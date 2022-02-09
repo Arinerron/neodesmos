@@ -1,4 +1,3 @@
-
 define('scroll_helpers', ['require'], function(require) {
     return {
         scrollVisible: function(o, t, r) {

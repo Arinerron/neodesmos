@@ -1,4 +1,3 @@
-
 define('expressions/text_view', ["require", "exports", "tslib", "./abstract-item-view", "./smart_textarea", "dcgview", "./expression-edit-actions", "jquery.handleevent"], function(require, t, e, n, o, i, c) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

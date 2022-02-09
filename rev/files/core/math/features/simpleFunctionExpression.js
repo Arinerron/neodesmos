@@ -1,4 +1,3 @@
-
 define('core/math/features/simpleFunctionExpression', ['require', 'parsenodes'], function(require) {
     "use strict";
     var n = require("parsenodes");

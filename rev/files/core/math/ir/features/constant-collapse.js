@@ -1,4 +1,3 @@
-
 define('core/math/ir/features/constant-collapse', ["require", "exports", "../opcodes", "../instructions", "core/math/types", "core/math/maybe-rational", "./depends-on-outer-variable", "./is-constant", "./as-value", "./reconstitute-ir", "./list-length", "./contains-nan-value", "./interpret", "./fuse-broadcast", "./element-at", "../../builtin"], function(require, t, n, e, r, s, a, o, u, i, c, p, l, g, I, v) {
     "use strict";
     function y(t, n) {

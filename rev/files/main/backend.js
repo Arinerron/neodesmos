@@ -1,4 +1,3 @@
-
 define('main/backend', ["require", "exports", "jquery"], function(require, e, t) {
     "use strict";
     function r(e) {

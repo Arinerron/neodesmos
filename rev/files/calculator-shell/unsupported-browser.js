@@ -1,4 +1,3 @@
-
 define('calculator-shell/unsupported-browser', ["require", "exports", "tslib", "dcgview", "./modal"], function(require, e, t, n, o) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

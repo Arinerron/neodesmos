@@ -1,4 +1,3 @@
-
 define('config', ["require", "exports", "core/lib/deepCopy", "lib/parse-query-params"], function(require, e, o, n) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

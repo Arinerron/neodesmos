@@ -1,4 +1,3 @@
-
 define('expressions/circular-icon-view', ["require", "exports", "lib/color-distance", "tslib", "dcgview", "./expression-menus/color-swatch", "loadcss!./circular-icon-view"], function(require, e, o, n, r, i) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

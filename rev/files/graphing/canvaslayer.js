@@ -1,4 +1,3 @@
-
 define('graphing/canvaslayer', ['require', 'jquery', 'pjs', 'browser'], function(require) {
     "use strict";
     var t = require("jquery")

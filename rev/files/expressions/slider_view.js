@@ -1,4 +1,3 @@
-
 define('expressions/slider_view', ["require", "exports", "tslib", "jquery", "keys", "dcgview", "dcgview-helpers/slider", "./slider_limits_view", "dcgview-helpers/static-mathquill-view", "graphing-calc/models/expression", "core/types/slider-loop-modes", "loadcss!./slider-view"], function(require, t, e, i, o, n, r, l, s, d, c) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

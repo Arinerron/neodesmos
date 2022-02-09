@@ -1,4 +1,3 @@
-
 define('core/lib/label', ["require", "exports", "underscore", "core/math/distance", "core/math/tofraction"], function(require, e, t, n, r) {
     "use strict";
     function a(e, t) {

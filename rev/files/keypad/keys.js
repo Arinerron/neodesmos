@@ -1,4 +1,3 @@
-
 define('keypad/keys', ["require", "exports", "./btn", "dcgview-helpers/static-mathquill-view", "dcgview"], function(require, a, e, t, n) {
     "use strict";
     Object.defineProperty(a, "__esModule", {

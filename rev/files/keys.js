@@ -1,4 +1,3 @@
-
 define('keys', ['require', 'browser'], function(require) {
     var t = require("browser");
     return new function() {

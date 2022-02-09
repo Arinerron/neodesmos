@@ -1,4 +1,3 @@
-
 define('main/layout-model', ["require", "exports", "browser"], function(require, e, t) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

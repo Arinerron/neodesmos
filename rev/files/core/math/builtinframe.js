@@ -1,4 +1,3 @@
-
 define('core/math/builtinframe', ['require', 'core/math/builtinconstants', 'core/math/ir/builtin-table'], function(require) {
     "use strict";
     var n, i = require("core/math/builtinconstants"), t = require("core/math/ir/builtin-table"), r = {};

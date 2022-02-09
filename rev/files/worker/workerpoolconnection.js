@@ -1,4 +1,3 @@
-
 define('worker/workerpoolconnection', ['require', 'pjs', 'underscore_model'], function(require) {
     "use strict";
     return require("pjs")(require("underscore_model").UnderscoreModel, function(e, o) {

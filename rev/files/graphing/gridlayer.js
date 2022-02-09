@@ -1,4 +1,3 @@
-
 define('graphing/gridlayer', ['require', 'pjs', './stepnumber', 'core/lib/label', './computestepsizes', 'core/graphing-calc/json/graph-settings', './svg-classes', './svg-groups'], function(require) {
     "use strict";
     var t = require("pjs")

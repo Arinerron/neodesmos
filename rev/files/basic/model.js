@@ -1,4 +1,3 @@
-
 define('basic/model', ["require", "exports", "immutable-store", "main/shared-clock-bus", "core/lib/label", "main/evaluator", "core/lib/label", "underscore"], function(require, t, e, o, s, i, n, r) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

@@ -1,4 +1,3 @@
-
 define('main/shared-worker-pool', ["require", "exports", "worker/workerpool", "lib/urlparser"], function(require, e, r, o) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

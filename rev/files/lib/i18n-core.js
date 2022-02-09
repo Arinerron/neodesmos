@@ -1,4 +1,3 @@
-
 define('lib/i18n-core', ["require", "exports", "text!l10n/all-en-strings.ftl", "tslib", "underscore", "lib/console", "./i18n-homepage-langs", "./enabled-languages", "./fluent-bundle-sequence"], function(require, n, r, e, t, a, u, o, i) {
     "use strict";
     Object.defineProperty(n, "__esModule", {

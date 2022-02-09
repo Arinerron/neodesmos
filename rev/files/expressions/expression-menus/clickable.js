@@ -1,4 +1,3 @@
-
 define('expressions/expression-menus/clickable', ["require", "exports", "tslib", "./base-menu-section", "dcgview", "expressions/toggle-view", "dcgview-helpers/mathquill-view", "main/mathquill-operators", "expressions/clickable_image_states_view", "../../dcgview-helpers/tooltipped-error", "../../shared/dcgviews/localize", "loadcss!./clickable"], function(require, e, t, n, r, o, c, l, i, a, s) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

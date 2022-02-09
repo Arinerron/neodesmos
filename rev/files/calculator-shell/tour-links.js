@@ -1,4 +1,3 @@
-
 define('calculator-shell/tour-links', ["require", "exports", "tours/all_tours", "tslib", "dcgview", "underscore"], function(require, t, e, r, n, o) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

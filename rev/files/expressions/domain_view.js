@@ -1,4 +1,3 @@
-
 define('expressions/domain_view', ["require", "exports", "tslib", "dcgview", "jquery", "keys", "dcgview-helpers/static-mathquill-view", "dcgview-helpers/mathquill-view", "graphing-calc/models/expression", "core/lib/label", "bugsnag", "main/mathquill-operators", "../shared-components/mathquill-braille-wrapper", "./expression_view", "loadcss!domain"], function(require, e, t, n, i, o, a, r, s, l, c, d, u, p) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

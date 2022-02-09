@@ -1,4 +1,3 @@
-
 define('worker/workerpool', ['require', 'console', './create_worker_url', 'pjs', 'underscore_model', './fakeworker', 'underscore', 'lib/urlparser'], function(require) {
     "use strict";
     var r = require("console")

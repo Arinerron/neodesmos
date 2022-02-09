@@ -1,4 +1,3 @@
-
 define('core/graphing-calc/json/table', ["require", "exports", "tslib", "core/lib/default-spec", "core/types/styles", "core/lib/dragmode"], function(require, e, t, n, s, i) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

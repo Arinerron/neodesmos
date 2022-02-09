@@ -1,4 +1,3 @@
-
 define('core/math/parsenode/product', ['require', 'pjs', './repeatedoperator'], function(require) {
     "use strict";
     return require("pjs")(require("./repeatedoperator"), function(t, n) {

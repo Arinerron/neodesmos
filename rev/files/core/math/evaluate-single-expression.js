@@ -1,4 +1,3 @@
-
 define('core/math/evaluate-single-expression', ["require", "exports", "parser", "core/math/builtinframe", "core/math/parsenode/constant", "core/math/policy"], function(require, e, t, r, a, i) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

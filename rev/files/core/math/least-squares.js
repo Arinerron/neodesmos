@@ -1,4 +1,3 @@
-
 define('core/math/least-squares', ["require", "exports", "numeric", "core/math/distance", "./qr"], function(require, r, e, n, t) {
     "use strict";
     function a(r, e) {

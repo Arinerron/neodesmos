@@ -1,4 +1,3 @@
-
 define('core/cl-calculator', ["require", "exports", "core/graphing-calc/migrate-state", "core/graphing-calc/json/expression", "core/graphing-calc/json/table"], function(require, e, t, a, r) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

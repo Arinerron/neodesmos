@@ -1,4 +1,3 @@
-
 define('expressions/list_move_controller', ["require", "exports", "core/lib/dragmode", "core/lib/number-to-latex", "core/lib/label", "lib/rounding", "graphing-calc/models/expression", "graphing-calc/models/table", "graphing-calc/models/list", "graphing-calc/models/image", "core/math/poi", "core/math/functions"], function(require, e, t, i, r, a, n, o, l, s, d, g) {
     "use strict";
     function h(e, t) {

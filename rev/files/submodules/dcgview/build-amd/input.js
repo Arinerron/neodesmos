@@ -1,4 +1,3 @@
-
 define('submodules/dcgview/build-amd/input', ["./create-class", "./spread"], function(t, e) {
     "use strict";
     function i(t) {

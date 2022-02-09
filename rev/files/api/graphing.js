@@ -1,4 +1,3 @@
-
 define('api/graphing', ["require", "exports", "tslib", "lib/i18n", "main/calc_embed", "core/lib/deepCopy", "underscore_model", "core/math/recttransformation", "lib/dom-change-detector", "graphing/compute-async-screenshot-bounds", "graphing-calc/api/sanitize-expression", "dcgview-helpers/mathquill-view", "dcgview-helpers/mathquill-proxy", "lib/console", "underscore", "main/shared-clock-bus", "main/shared-worker-pool", "core/graphing-calc/json/graph-settings", "graphing-calc/json/config-options", "core/lib/random-seed", "../lib/underscore-shim"], function(require, e, t, o, r, n, i, s, a, p, c, l, h, d, u, g, f, y, m, v, b) {
     "use strict";
     function x(e, t) {

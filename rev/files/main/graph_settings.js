@@ -1,4 +1,3 @@
-
 define('main/graph_settings', ['require', 'pjs', 'underscore', 'underscore_model', 'core/graphing-calc/json/graph-settings', 'console', 'core/graphing-calc/json/graph-settings', 'core/lib/color-helpers'], function(require) {
     "use strict";
     var e = require("pjs")

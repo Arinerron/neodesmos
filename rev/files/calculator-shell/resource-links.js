@@ -1,4 +1,3 @@
-
 define('calculator-shell/resource-links', ["require", "exports", "tslib", "dcgview", "../lib/enabled-languages"], function(require, e, t, n, o) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

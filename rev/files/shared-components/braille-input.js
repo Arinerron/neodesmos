@@ -1,4 +1,3 @@
-
 define('shared-components/braille-input', ["require", "exports", "tslib", "lib/i18n", "dcgview", "jquery"], function(require, t, o, e, s, i) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

@@ -1,4 +1,3 @@
-
 define('shared-components/mathquill-braille-wrapper', ["require", "exports", "tslib", "lib/i18n", "jquery", "abraham", "dcgview", "./braille-input", "./tooltip", "loadcss!./Abraham", "loadcss!./mathquill-braille-wrapper"], function(require, t, e, r, i, o, n, l, a) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

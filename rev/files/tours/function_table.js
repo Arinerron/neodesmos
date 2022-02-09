@@ -1,4 +1,3 @@
-
 define('tours/function_table', ['require', 'pjs', './base_tour', 'jquery', 'predicates/common', 'graphing-calc/models/table'], function(require) {
     "use strict";
     var e = require("pjs")

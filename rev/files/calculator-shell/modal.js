@@ -1,4 +1,3 @@
-
 define('calculator-shell/modal', ["require", "exports", "tslib", "dcgview"], function(require, e, t, n) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

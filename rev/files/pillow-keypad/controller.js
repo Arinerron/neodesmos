@@ -1,4 +1,3 @@
-
 define('pillow-keypad/controller', ["require", "exports", "flux", "keypad/mq-commands", "lib/i18n", "dcgview-helpers/mathquill-view"], function(require, e, t, a, i, n) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

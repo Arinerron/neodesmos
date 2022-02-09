@@ -1,4 +1,3 @@
-
 define('basic/keypad/braille-keypad', ["require", "exports", "tslib", "dcgview", "basic/dcgview-basic", "./braille-example-row", "loadcss!./braille-keypad"], function(require, e, t, l, r, n) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

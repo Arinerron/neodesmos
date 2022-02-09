@@ -1,4 +1,3 @@
-
 define('submodules/dcgview/build-amd/checkbox', ["./create-class", "./spread"], function(e, t) {
     "use strict";
     function o(e) {

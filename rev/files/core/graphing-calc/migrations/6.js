@@ -1,4 +1,3 @@
-
 define('core/graphing-calc/migrations/6', ["require", "exports", "core/lib/deepCopy", "underscore", "core/math/sliders", "core/math/evaluate-single-expression"], function(require, e, r, i, t, a) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

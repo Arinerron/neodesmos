@@ -1,4 +1,3 @@
-
 define('expressions/promptslider_view', ["require", "exports", "tslib", "core/lib/label", "jquery", "lib/aria", "dcgview", "graphing-calc/models/list", "graphing-calc/models/ticker", "loadcss!prompt-sliders"], function(require, t, e, r, i, n, s, l, o) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

@@ -1,4 +1,3 @@
-
 define('dcgview-helpers/slider', ["require", "exports", "lib/rounding", "tslib", "keys", "dcgview", "jquery", "lib/conditional_blur", "./dragdrop", "loadcss!./slider"], function(require, t, e, r, o, s, n, i, a) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

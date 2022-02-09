@@ -1,4 +1,3 @@
-
 define('calculator-shell/contest-submission-dialog', ["require", "exports", "text!data/list-of-countries.json", "tslib", "dcgview", "analytics/looker", "../dcgview-helpers/searchable-dropdown", "dcgview-helpers/checkbox", "lib/aria", "./modal", "main/account_backend", "shared/dcgviews/localize", "loadcss!spinner", "loadcss!./contest-submission-dialog"], function(require, t, e, n, o, s, r, i, c, a, l, u) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

@@ -1,4 +1,3 @@
-
 define('graphing/clipping', ["require", "exports", "core/types/graphmode"], function(require, e, n) {
     "use strict";
     function r(e, n, r, t) {

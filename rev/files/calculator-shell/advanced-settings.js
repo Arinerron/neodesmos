@@ -1,4 +1,3 @@
-
 define('calculator-shell/advanced-settings', ["require", "exports", "tslib", "dcgview", "../shared-components/shared-checkbox", "../shared-components/shared-account-modal-errors", "bugsnag", "underscore", "loadcss!./advanced-settings"], function(require, e, t, r, n, o, s, a) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

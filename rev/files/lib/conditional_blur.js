@@ -1,4 +1,3 @@
-
 define('lib/conditional_blur', ["require", "exports", "touchtracking", "jquery"], function(require, e, t, u) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

@@ -1,4 +1,3 @@
-
 define('basic/keypad/scientific-keypad', ["require", "exports", "tslib", "dcgview", "basic/dcgview-basic", "./sci-keypad", "./sci-qwerty-keypad", "./sci-letters-keypad", "./sci-capital-qwerty-keypad", "./sci-capital-letters-keypad", "./sci-functions-keypad"], function(require, e, t, r, n, o, l, c, a, i, u) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

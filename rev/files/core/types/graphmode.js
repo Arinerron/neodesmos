@@ -1,4 +1,3 @@
-
 define('core/types/graphmode', ["require", "exports"], function(require, O) {
     "use strict";
     Object.defineProperty(O, "__esModule", {

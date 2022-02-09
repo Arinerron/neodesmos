@@ -1,4 +1,3 @@
-
 define('basic/basic-list-view', ["require", "exports", "tslib", "scroll_helpers", "dcgview", "./dcgview-basic", "./expression-view", "jquery", "lib/conditional_blur", "loadcss!./basic-list-view"], function(require, e, t, n, i, r, o, s, c) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

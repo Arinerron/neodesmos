@@ -1,4 +1,3 @@
-
 define('mygraphs/load-graph-view', ["require", "exports", "tslib", "dcgview", "loadcss!./load-graph-view"], function(require, t, e, n) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

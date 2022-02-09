@@ -1,4 +1,3 @@
-
 define('lib/color-distance', ['require', 'underscore', 'lib/named-colors'], function(require) {
     "use strict";
     var r = require("underscore")

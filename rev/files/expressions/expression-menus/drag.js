@@ -1,4 +1,3 @@
-
 define('expressions/expression-menus/drag', ["require", "exports", "tslib", "./base-menu-section", "dcgview", "underscore", "expressions/toggle-view", "core/lib/dragmode", "../circular-icon-view"], function(require, e, t, r, o, n, i, a, c) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

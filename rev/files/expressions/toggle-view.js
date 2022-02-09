@@ -1,4 +1,3 @@
-
 define('expressions/toggle-view', ["require", "exports", "tslib", "dcgview", "loadcss!./toggle-view"], function(require, e, t, n) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

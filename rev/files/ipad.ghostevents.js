@@ -1,4 +1,3 @@
-
 define('ipad.ghostevents', ['require'], function(require) {
     var e = !1
       , t = null;

@@ -1,4 +1,3 @@
-
 define('core/math/ir/features/interpret', ["require", "exports", "tslib", "core/math/maybe-rational", "../opcodes", "core/math/types", "../instructions", "../builtin-table", "./as-value", "./nan-of-type", "../../builtin", "../../errormsg"], function(require, r, e, t, a, n, s, u, o, c, i, l) {
     "use strict";
     function g(r, e) {

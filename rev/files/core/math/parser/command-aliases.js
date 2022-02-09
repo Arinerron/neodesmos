@@ -1,4 +1,3 @@
-
 define('core/math/parser/command-aliases', ["require", "exports", "./char-codes"], function(require, e, t) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

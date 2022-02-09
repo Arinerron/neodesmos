@@ -1,4 +1,3 @@
-
 define('core/math/parsenode/irexpression', ['require', 'pjs', './base', 'core/math/types', 'core/math/ir/features/as-value', 'core/math/ir/features/nan-of-type', 'core/math/errormsg'], function(require) {
     "use strict";
     var e = require("pjs")

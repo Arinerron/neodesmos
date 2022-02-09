@@ -1,4 +1,3 @@
-
 define('core/graphing-calc/migrate-state', ["require", "exports", "./migrations/0", "./migrations/1", "./migrations/2", "./migrations/3", "./migrations/4", "core/graphing-calc/validate-state", "./migrations/5", "./migrations/6", "./migrations/7", "./migrations/8", "./migrations/9"], function(require, e, r, t, n, i, o, a, s, l, u, c, d) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

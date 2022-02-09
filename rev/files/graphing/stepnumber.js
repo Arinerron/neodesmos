@@ -1,4 +1,3 @@
-
 define('graphing/stepnumber', ['require', 'pjs', './svg-classes'], function(require) {
     "use strict";
     var t = require("pjs")

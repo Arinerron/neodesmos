@@ -1,4 +1,3 @@
-
 define('submodules/dcgview/build-amd/bindings', [], function() {
     "use strict";
     return {

@@ -1,4 +1,3 @@
-
 define('graphing/projection', ["require", "exports", "core/math/recttransformation"], function(require, t, e) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

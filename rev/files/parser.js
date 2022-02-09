@@ -1,4 +1,3 @@
-
 define('parser', ['require', 'core/math/baseparser', 'core/math/features/getConcreteTree', 'core/math/features/buildIRExpression', 'core/math/features/typeCheck', 'core/math/features/repr', 'core/math/features/substitute', 'core/math/features/simpleFunctionExpression', 'core/math/features/analyze', 'core/math/features/analyzeFourFunction', 'core/math/features/analyzeScientific', 'core/math/features/analyzeSingleExpressionScientific', 'core/math/features/getgraphmode', 'core/math/features/getgraphinfo', 'core/math/features/getMoveStrategy', 'core/math/features/getDefaultDragMode', 'core/math/features/tableinfo', 'core/math/features/tableerror', 'core/math/features/graph', 'core/math/features/elementAt', 'core/math/features/printLatex', 'core/math/features/getExpressionType'], function(require) {
     "use strict";
     var e = require("core/math/baseparser");

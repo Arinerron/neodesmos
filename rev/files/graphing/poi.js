@@ -1,4 +1,3 @@
-
 define('graphing/poi', ["require", "exports", "core/math/poi-type", "core/types/graphmode", "core/types/point-opacity"], function(require, t, e, i, n) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

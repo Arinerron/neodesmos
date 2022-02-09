@@ -1,4 +1,3 @@
-
 define('shared-components/shared-consent-modal', ["require", "exports", "tslib", "dcgview", "shared-components/modal", "./shared-account-modal-errors", "loadcss!./shared-consent-modal", "loadcss!./shared-account-modal", "loadcss!shared-components/btn-styles"], function(require, t, n, o, e, r) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

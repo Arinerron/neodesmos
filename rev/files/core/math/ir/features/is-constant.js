@@ -1,4 +1,3 @@
-
 define('core/math/ir/features/is-constant', ["require", "exports", "../opcodes", "./print"], function(require, t, n, s) {
     "use strict";
     function o(t) {

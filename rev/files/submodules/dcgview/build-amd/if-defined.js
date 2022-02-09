@@ -1,4 +1,3 @@
-
 define('submodules/dcgview/build-amd/if-defined', ["./create-class", "./mounting", "./create-element"], function(e, t, i) {
     "use strict";
     function n(e) {

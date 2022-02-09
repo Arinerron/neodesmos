@@ -1,4 +1,3 @@
-
 define('graphing/integral-image', ["require", "exports"], function(require, t) {
     "use strict";
     function a(t, a, e) {

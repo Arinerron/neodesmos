@@ -1,4 +1,3 @@
-
 define('core/lib/color-helpers', ["require", "exports"], function(require, e) {
     "use strict";
     function r(e) {

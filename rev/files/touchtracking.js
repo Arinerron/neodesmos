@@ -1,4 +1,3 @@
-
 define('touchtracking', ['require', 'jquery', 'ipad.ghostevents', 'keys', 'loadcss!./touchtracking'], function(require) {
     var e, t, n = -1 !== document.location.href.indexOf("dcgDebugTouchTracking=dcgYES"), o = require("jquery"), c = require("ipad.ghostevents"), a = require("keys");
     require("loadcss!./touchtracking"),

@@ -1,4 +1,3 @@
-
 define('core/graphing-calc/migrations/9', ["require", "exports", "tslib", "core/lib/random-seed", "../json/ticker"], function(require, e, i, r, n) {
     "use strict";
     function l(e, i, r) {

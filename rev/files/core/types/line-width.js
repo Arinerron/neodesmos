@@ -1,4 +1,3 @@
-
 define('core/types/line-width', ["require", "exports"], function(require, e) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

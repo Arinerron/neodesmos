@@ -1,4 +1,3 @@
-
 define('expressions/image-upload-view', ["require", "exports", "tslib", "dcgview", "jquery", "main/manage-focus-helper"], function(require, t, e, n, o, i) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

@@ -1,4 +1,3 @@
-
 define('core/math/recttransformation', ["require", "exports"], function(require, t) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

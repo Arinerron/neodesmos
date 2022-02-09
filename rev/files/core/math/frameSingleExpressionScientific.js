@@ -1,4 +1,3 @@
-
 define('core/math/frameSingleExpressionScientific', ['require', 'core/math/builtinframe'], function(require) {
     "use strict";
     var r = require("core/math/builtinframe")

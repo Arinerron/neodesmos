@@ -1,4 +1,3 @@
-
 define('expressions/slider_speed_view', ["require", "exports", "tslib", "underscore", "lib/aria", "dcgview", "core/graphing-calc/json/expression", "loadcss!./slider-speed-view"], function(require, e, t, r, n, i, o) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

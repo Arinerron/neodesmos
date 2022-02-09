@@ -1,4 +1,3 @@
-
 define('calculator-shell/view', ["require", "exports", "tslib", "dcgview", "jquery", "lib/i18n", "shared-header/hamburger", "shared-header/accounts", "shared-header/header-toast", "./header-icon", "./graph-title", "../shared-components/tooltip", "frontpage/desmos-svg-logo", "loadcss!shared-header/header-bar", "loadcss!./calculator-shell", "loadcss!spinner"], function(require, e, t, n, r, o, c, l, a, s, i, u, d) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

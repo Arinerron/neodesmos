@@ -1,4 +1,3 @@
-
 define('shared-components/shared-signup-modal', ["require", "exports", "tslib", "dcgview", "shared-components/modal", "jquery", "underscore", "shared/dcgviews/localize", "./shared-cookie-notice", "./shared-checkbox", "./shared-account-modal-errors", "loadcss!./shared-account-modal", "loadcss!./shared-signup-modal"], function(require, e, t, n, r, o, i, s, a, c, l) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

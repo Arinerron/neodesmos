@@ -1,4 +1,3 @@
-
 define('lib/defocus-mobile', ["require", "exports", "jquery", "touchtracking"], function(require, e, t, r) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

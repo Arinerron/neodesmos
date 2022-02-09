@@ -1,4 +1,3 @@
-
 define('expressions/colors', ["require", "exports", "core/lib/color-helpers"], function(require, r, o) {
     "use strict";
     Object.defineProperty(r, "__esModule", {

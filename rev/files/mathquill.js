@@ -1,4 +1,3 @@
-
 define('mathquill', ['require', 'browser', 'jquery', 'toplevel/mathquill', 'main/mathquill-operators'], function(require) {
     "use strict";
     var t = require("browser")

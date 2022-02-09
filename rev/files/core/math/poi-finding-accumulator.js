@@ -1,4 +1,3 @@
-
 define('core/math/poi-finding-accumulator', ["require", "exports", "core/math/workerconfig", "tslib", "./curve-accumulator", "./poi"], function(require, e, t, i, r, s) {
     "use strict";
     function u(e) {

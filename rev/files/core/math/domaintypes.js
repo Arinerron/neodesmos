@@ -1,4 +1,3 @@
-
 define('core/math/domaintypes', ["require", "exports"], function(require, n) {
     "use strict";
     Object.defineProperty(n, "__esModule", {

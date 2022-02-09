@@ -1,4 +1,3 @@
-
 define('dcgview-helpers/tooltipped-error', ["require", "exports", "tslib", "dcgview", "../shared-components/tooltip", "loadcss!./tooltipped-error"], function(require, t, e, r, o) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

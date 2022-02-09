@@ -1,4 +1,3 @@
-
 define('core/math/ir/features/type-check', ["require", "exports", "core/math/errormsg", "../opcodes", "core/math/types", "../builtin-table", "../instructions"], function(require, e, r, t, a, s, n) {
     "use strict";
     function i(e, r) {

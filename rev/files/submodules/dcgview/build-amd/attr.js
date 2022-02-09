@@ -1,4 +1,3 @@
-
 define('submodules/dcgview/build-amd/attr', [], function() {
     "use strict";
     return {

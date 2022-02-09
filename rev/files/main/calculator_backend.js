@@ -1,4 +1,3 @@
-
 define('main/calculator_backend', ["require", "exports", "main/graph", "./backend"], function(require, r, e, a) {
     "use strict";
     Object.defineProperty(r, "__esModule", {

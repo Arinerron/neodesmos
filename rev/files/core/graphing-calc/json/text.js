@@ -1,4 +1,3 @@
-
 define('core/graphing-calc/json/text', ["require", "exports", "tslib", "core/lib/default-spec"], function(require, e, t, s) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

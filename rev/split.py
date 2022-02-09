@@ -22,5 +22,5 @@ for match in contents.split(prefix):
 
     os.makedirs(ROOT_DIRECTORY + os.path.dirname(filename), exist_ok=True)
     with open(ROOT_DIRECTORY + filename, 'w') as f:
-        f.write(prefix + match)
+        f.write(prefix.lstrip() + match)
 

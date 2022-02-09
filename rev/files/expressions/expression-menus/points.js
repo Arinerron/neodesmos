@@ -1,4 +1,3 @@
-
 define('expressions/expression-menus/points', ["require", "exports", "tslib", "./base-menu-section", "dcgview", "expressions/toggle-view", "dcgview-helpers/mathquill-view", "graphing-calc/models/expression", "graphing-calc/models/table", "core/types/point-opacity", "core/lib/dragmode", "core/types/point-size", "core/types/styles", "./color-picker", "../../shared-components/tooltip"], function(require, t, e, o, n, i, r, l, c, s, a, p, d, u, g) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

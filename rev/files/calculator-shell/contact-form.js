@@ -1,4 +1,3 @@
-
 define('calculator-shell/contact-form', ["require", "exports", "main/calculator_backend", "tslib", "dcgview", "jquery", "lib/parse-json-errors"], function(require, e, t, n, o, r, s) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

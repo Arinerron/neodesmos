@@ -1,4 +1,3 @@
-
 define('main/data_helpers', ["require", "exports", "vendor/papaparse", "underscore", "bugsnag", "geometry/math/isNumber"], function(require, e, r, t, a, n) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

@@ -1,4 +1,3 @@
-
 define('lib/get-clipboard-data', ["require", "exports"], function(require, a) {
     "use strict";
     Object.defineProperty(a, "__esModule", {

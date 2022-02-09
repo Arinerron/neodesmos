@@ -1,4 +1,3 @@
-
 define('shared-components/shared-dropdown-popover', ["require", "exports", "tslib", "dcgview", "jquery", "lib/i18n", "underscore", "loadcss!./shared-dropdown-popover"], function(require, o, n, t, e, i, r) {
     "use strict";
     Object.defineProperty(o, "__esModule", {

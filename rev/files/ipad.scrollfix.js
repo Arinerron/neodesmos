@@ -1,4 +1,3 @@
-
 define('ipad.scrollfix', ['require', 'jquery'], function(require) {
     var o = require("jquery")
       , n = !1

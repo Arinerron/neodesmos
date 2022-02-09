@@ -1,4 +1,3 @@
-
 define('core/graphing-calc/migrations/7', ["require", "exports", "tslib"], function(require, e, n) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

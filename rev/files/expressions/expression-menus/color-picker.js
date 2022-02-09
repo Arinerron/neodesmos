@@ -1,4 +1,3 @@
-
 define('expressions/expression-menus/color-picker', ["require", "exports", "lib/color-distance", "tslib", "dcgview", "underscore", "expressions/colors", "../../lib/mathspeak", "./color-swatch", "../../shared-components/tooltip", "dcgview-helpers/static-mathquill-view", "loadcss!./color-picker"], function(require, e, t, n, o, r, c, s, l, i, a) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

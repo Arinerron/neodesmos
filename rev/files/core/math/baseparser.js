@@ -1,4 +1,3 @@
-
 define('core/math/baseparser', ["require", "exports", "parsenodes", "core/math/errormsg", "core/math/parser/latex-parser", "core/math/parser/expression-parser", "core/math/parser/lower"], function(require, r, e, a, t, o, n) {
     "use strict";
     function i() {

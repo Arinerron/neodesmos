@@ -1,4 +1,3 @@
-
 define('core/math/functions', ["require", "exports", "core/math/builtin"], function(require, e, t) {
     "use strict";
     function n(e) {

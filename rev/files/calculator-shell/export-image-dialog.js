@@ -1,4 +1,3 @@
-
 define('calculator-shell/export-image-dialog', ["require", "exports", "api/calculator", "config", "tslib", "dcgview", "jquery", "lib/data-uri-to-blob", "lib/svg-string-to-blob", "dcgview-helpers/download-button", "./export-image-size-options", "lib/export-braille-equations", "graphing/braille-size-options", "./modal", "shared/dcgviews/localize", "browser", "loadcss!./export-image-dialog"], function(require, t, e, n, i, r, o, s, c, l, a, u, d, h, g, p) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

@@ -1,4 +1,3 @@
-
 define('lib/random_hash', ['require', 'exports', 'module'], function(require, t) {
     "use strict";
     function n(t) {

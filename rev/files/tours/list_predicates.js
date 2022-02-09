@@ -1,4 +1,3 @@
-
 define('tours/list_predicates', ['require', 'predicates/common', 'parser', 'graphing-calc/models/expression'], function(require) {
     "use strict";
     var e = require("predicates/common")

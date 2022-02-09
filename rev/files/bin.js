@@ -1,4 +1,3 @@
-
 define('bin', ["base64"], function(e) {
     "use strict";
     var n = {};

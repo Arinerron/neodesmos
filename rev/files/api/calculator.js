@@ -1,4 +1,3 @@
-
 define('api/calculator', ["require", "exports", "mathquill", "tslib", "main/mathquill-operators", "graphing/clipping", "graphing/canvas-labels", "core/constants", "expressions/colors", "graphing-calc/api/sanitize-expression", "core/graphing-calc/json/graph-settings", "main/font_sizes", "expressions/image_file_to_data_url", "./graphing", "./headless", "./fourfunction", "./scientific", "./pillow-keypad", "core/mathtools", "abraham"], function(require, a, e, o, t, l, i, n, r, s, u, c, d, p, g, C, m, f, h, D) {
     "use strict";
     var A;

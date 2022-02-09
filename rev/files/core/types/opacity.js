@@ -1,4 +1,3 @@
-
 define('core/types/opacity', ["require", "exports"], function(require, e) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

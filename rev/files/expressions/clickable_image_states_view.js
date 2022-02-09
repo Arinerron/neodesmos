@@ -1,4 +1,3 @@
-
 define('expressions/clickable_image_states_view', ["require", "exports", "tslib", "dcgview", "../shared-components/tooltip", "./image-upload-view", "loadcss!./clickable_image_states_view"], function(require, e, t, o, r, a) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

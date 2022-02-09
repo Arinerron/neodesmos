@@ -1,4 +1,3 @@
-
 define('core/math/parsenode/basecomparator', ['require', 'pjs', './expression', './expressionTypes', 'core/math/comparators'], function(require) {
     "use strict";
     var t = require("pjs")

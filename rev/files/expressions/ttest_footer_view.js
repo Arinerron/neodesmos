@@ -1,4 +1,3 @@
-
 define('expressions/ttest_footer_view', ["require", "exports", "tslib", "dcgview", "graphing-calc/models/expression", "core/lib/number-to-latex", "dcgview-helpers/static-mathquill-view", "loadcss!./ttest_footer_view"], function(require, e, t, n, a, s, l) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

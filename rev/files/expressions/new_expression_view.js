@@ -1,4 +1,3 @@
-
 define('expressions/new_expression_view', ["require", "exports", "tslib", "dcgview", "loadcss!new_expression"], function(require, e, t, n) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

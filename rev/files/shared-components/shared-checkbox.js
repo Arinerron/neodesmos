@@ -1,4 +1,3 @@
-
 define('shared-components/shared-checkbox', ["require", "exports", "tslib", "dcgview", "jquery", "loadcss!./shared-checkbox", "loadcss!./dcg-shared-icons"], function(require, e, s, r, c) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

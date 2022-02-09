@@ -1,4 +1,3 @@
-
 define('graphing/movablepointslayer', ["require", "exports", "tslib", "dcgview", "browser", "graphing-calc/models/expression", "core/lib/label", "core/graphing-calc/json/expression", "core/types/graphmode", "lib/aria", "./constants", "jquery", "underscore"], function(require, e, t, r, o, i, n, a, s, c, p, d, l) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

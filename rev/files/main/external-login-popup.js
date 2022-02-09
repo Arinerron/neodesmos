@@ -1,4 +1,3 @@
-
 define('main/external-login-popup', ["require", "exports", "./backend"], function(require, e, o) {
     "use strict";
     function n(e, o) {

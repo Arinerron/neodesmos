@@ -1,4 +1,3 @@
-
 define('lib/parse-query-params', ["require", "exports"], function(require, e) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

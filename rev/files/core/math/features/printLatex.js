@@ -1,4 +1,3 @@
-
 define('core/math/features/printLatex', ['require', 'parsenodes', 'core/lib/label', 'core/lib/number-to-latex'], function(require) {
     "use strict";
     var t = require("parsenodes")

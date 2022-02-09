@@ -1,4 +1,3 @@
-
 define('graphing/graphsketch', ["require", "exports", "core/math/poi-type", "core/types/graphmode", "./poi", "core/math/poi-type", "lib/mathspeak"], function(require, e, t, i, s, h, a) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

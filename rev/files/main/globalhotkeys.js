@@ -1,4 +1,3 @@
-
 define('main/globalhotkeys', ["require", "exports", "browser", "keys", "jquery", "lib/aria"], function(require, e, t, o, n, r) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

@@ -1,4 +1,3 @@
-
 define('core/math/features/analyzeScientific', ['require', 'parsenodes', 'core/math/statementanalysis', 'core/math/errormsg', 'core/math/builtinframe'], function(require) {
     "use strict";
     var t = require("parsenodes")

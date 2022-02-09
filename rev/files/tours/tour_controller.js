@@ -1,4 +1,3 @@
-
 define('tours/tour_controller', ['require', 'pjs', 'tours/all_tours', 'lib/urlparser', 'jquery'], function(require) {
     "use strict";
     var t = require("pjs")

@@ -1,4 +1,3 @@
-
 define('main/account_backend', ["require", "exports", "jquery", "./backend"], function(require, n, t, e) {
     "use strict";
     function r() {

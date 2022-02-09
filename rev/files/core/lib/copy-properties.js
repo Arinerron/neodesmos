@@ -1,4 +1,3 @@
-
 define('core/lib/copy-properties', ["require", "exports", "core/lib/deepCopy"], function(require, r, e) {
     "use strict";
     Object.defineProperty(r, "__esModule", {

@@ -1,4 +1,3 @@
-
 define('submodules/dcgview/build-amd/longest-subsequence', [], function() {
     "use strict";
     return function(r) {

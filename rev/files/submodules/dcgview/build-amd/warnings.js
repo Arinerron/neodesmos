@@ -1,4 +1,3 @@
-
 define('submodules/dcgview/build-amd/warnings', [], function() {
     "use strict";
     var r = [];

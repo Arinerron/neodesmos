@@ -1,4 +1,3 @@
-
 define('calculator-shell/menu', ["require", "exports", "tslib", "dcgview", "jquery"], function(require, t, e, o, r) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

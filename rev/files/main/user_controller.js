@@ -1,4 +1,3 @@
-
 define('main/user_controller', ["require", "exports", "tslib", "jquery", "lib/urlparser", "./account_backend", "lib/underscore-shim"], function(require, t, e, i, n, r, o) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

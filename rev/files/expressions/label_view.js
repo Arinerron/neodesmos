@@ -1,4 +1,3 @@
-
 define('expressions/label_view', ["require", "exports", "tslib", "dcgview", "graphing-calc/models/expression", "core/graphing-calc/json/expression", "loadcss!./label_view", "loadcss!toggle"], function(require, e, t, l, o, n) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

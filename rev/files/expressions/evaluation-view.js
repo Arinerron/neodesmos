@@ -1,4 +1,3 @@
-
 define('expressions/evaluation-view', ["require", "exports", "tslib", "dcgview", "core/lib/label", "dcgview-helpers/static-mathquill-view", "./expression-menus/color-swatch", "../shared-components/mathquill-braille-wrapper", "./expression_view", "loadcss!./evaluation-view"], function(require, e, t, n, o, r, a, i, l) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

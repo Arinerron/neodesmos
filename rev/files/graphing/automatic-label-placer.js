@@ -1,4 +1,3 @@
-
 define('graphing/automatic-label-placer', ["require", "exports", "graphing/integral-image", "underscore"], function(require, t, e, a) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

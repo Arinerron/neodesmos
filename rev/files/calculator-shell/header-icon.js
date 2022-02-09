@@ -1,4 +1,3 @@
-
 define('calculator-shell/header-icon', ["require", "exports", "tslib", "dcgview", "../shared-components/tooltip"], function(require, t, e, n, o) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

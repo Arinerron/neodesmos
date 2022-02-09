@@ -1,4 +1,3 @@
-
 define('expressions/table-view', ["require", "exports", "tslib", "keys", "lib/aria", "./abstract-item-view", "dcgview", "./tables/header-view", "./tables/cell-view", "graphing-calc/models/table", "vendor/mathquill", "jquery", "./expression-edit-actions", "expressions/measure-expressions", "./suggested-zoom-view", "main/manage-focus-helper", "loadcss!./table-view", "jquery.handleevent"], function(require, e, t, o, n, l, r, i, s, c, a, d, u, p, h, g) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

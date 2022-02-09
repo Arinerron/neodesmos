@@ -1,4 +1,3 @@
-
 define('expressions/expression-menus/expression-options-menu-view', ["require", "exports", "tslib", "dcgview", "lib/aria", "jquery", "./lines", "./colors-only", "./fill", "./clickable", "./points", "./label", "./drag", "graphing-calc/models/expression", "core/math/expression-types", "core/lib/dragmode", "loadcss!./expression-options-menu-view"], function(require, e, i, n, t, s, o, r, l, c, a, p, u, d, h, m) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

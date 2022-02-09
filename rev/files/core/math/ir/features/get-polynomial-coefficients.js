@@ -1,4 +1,3 @@
-
 define('core/math/ir/features/get-polynomial-coefficients', ["require", "exports", "../chunk", "../opcodes", "core/math/maybe-rational", "./polynomial-order", "../instructions", "./copy-instruction"], function(require, e, n, r, t, a, s, o) {
     "use strict";
     function i(e) {

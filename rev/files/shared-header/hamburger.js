@@ -1,4 +1,3 @@
-
 define('shared-header/hamburger', ["require", "exports", "tslib", "browser", "dcgview", "../shared-components/tooltip"], function(require, e, t, o, r, n) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

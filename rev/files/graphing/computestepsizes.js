@@ -1,4 +1,3 @@
-
 define('graphing/computestepsizes', ['require', './stepnumber', 'core/lib/label'], function(require) {
     "use strict";
     var t = require("./stepnumber")

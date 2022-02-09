@@ -1,4 +1,3 @@
-
 define('basic/keypad/braille-example-row', ["require", "exports", "tslib", "dcgview", "dcgview-helpers/static-mathquill-view", "abraham", "loadcss!./braille-example-row"], function(require, e, t, r, l, n) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

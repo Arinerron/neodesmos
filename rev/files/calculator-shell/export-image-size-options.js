@@ -1,4 +1,3 @@
-
 define('calculator-shell/export-image-size-options', ["require", "exports", "tslib", "dcgview", "jquery", "./export-image-dialog", "loadcss!./export-image-size-options"], function(require, e, t, n, o, s) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

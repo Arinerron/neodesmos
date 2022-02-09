@@ -1,4 +1,3 @@
-
 define('expressions/action-icon-view', ["require", "exports", "tslib", "dcgview", "./circular-icon-view", "main/manage-focus-helper", "jquery.handleevent", "loadcss!./action-icon-view"], function(require, n, t, i, e, o) {
     "use strict";
     Object.defineProperty(n, "__esModule", {

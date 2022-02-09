@@ -1,4 +1,3 @@
-
 define('core/math/ir/opcodes', ["require", "exports"], function(require, e) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

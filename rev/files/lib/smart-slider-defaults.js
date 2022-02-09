@@ -1,4 +1,3 @@
-
 define('lib/smart-slider-defaults', ["require", "exports", "core/math/baseparser", "core/types/line-width", "core/types/point-size", "core/types/point-opacity", "core/types/line-opacity", "core/types/opacity"], function(require, e, i, n, a, r, t, o) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

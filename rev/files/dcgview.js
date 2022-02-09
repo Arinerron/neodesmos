@@ -1,4 +1,3 @@
-
 define('dcgview', ["require", "exports", "submodules/dcgview/dcgview", "jquery", "bugsnag", "lib/retain-lang", "loadcss!dcgview-shim"], function(require, n, t, o, u, i) {
     "use strict";
     return t.addWarningHandler(function(n) {

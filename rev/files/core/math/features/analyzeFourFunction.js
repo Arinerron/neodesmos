@@ -1,4 +1,3 @@
-
 define('core/math/features/analyzeFourFunction', ['require', 'parsenodes', 'core/math/statementanalysis', 'core/math/errormsg', 'core/math/builtinframe'], function(require) {
     "use strict";
     var n = require("parsenodes")

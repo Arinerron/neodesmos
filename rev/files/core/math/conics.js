@@ -1,4 +1,3 @@
-
 define('core/math/conics', ['require', 'numeric', 'core/math/distance', 'core/math/qr'], function(require) {
     "use strict";
     var r = require("numeric")

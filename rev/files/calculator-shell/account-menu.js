@@ -1,4 +1,3 @@
-
 define('calculator-shell/account-menu', ["require", "exports", "tslib", "dcgview", "./menu", "loadcss!./account-menu"], function(require, t, n, e, o) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

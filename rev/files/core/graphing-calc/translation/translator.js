@@ -1,4 +1,3 @@
-
 define('core/graphing-calc/translation/translator', ["require", "exports", "tslib", "../../lib/deepCopy", "./common"], function(require, e, i, a, t) {
     "use strict";
     function r(e, a) {

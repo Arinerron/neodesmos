@@ -1,4 +1,3 @@
-
 define('core/math/ir/features/value-to-latex', ["require", "exports", "core/math/types", "../../../lib/number-to-latex"], function(require, e, t, r) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

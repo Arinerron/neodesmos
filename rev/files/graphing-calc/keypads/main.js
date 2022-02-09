@@ -1,4 +1,3 @@
-
 define('graphing-calc/keypads/main', ["require", "exports", "tslib", "dcgview", "./dcgview-graphing", "./qwerty", "./qwerty-capital", "./numbers", "./letters", "./letters-capital", "./audio", "./functions-popover", "jquery", "underscore", "../../shared-components/tooltip", "loadcss!./graphing-keypad-container"], function(require, t, e, o, n, r, i, l, c, a, s, d, p, u, f) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

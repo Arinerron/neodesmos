@@ -1,4 +1,3 @@
-
 define('graphing-calc/api/sanitize-expression', ["require", "exports", "core/types/styles", "core/lib/dragmode", "core/types/label-sizes", "core/types/label-orientations", "core/lib/number-to-latex", "lib/console"], function(require, e, i, n, t, a, r, o) {
     "use strict";
     function l(e, i) {

@@ -1,4 +1,3 @@
-
 define('core/types/slider-loop-modes', ["require", "exports"], function(require, e) {
     "use strict";
     var o;

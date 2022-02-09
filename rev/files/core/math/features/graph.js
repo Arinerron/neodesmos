@@ -1,4 +1,3 @@
-
 define('core/math/features/graph', ["require", "exports", "parsenodes", "core/math/comparators", "core/math/parsenode/irexpression", "tslib", "core/math/errormsg", "core/math/builtin", "core/math/plotter", "core/types/graphmode", "core/lib/dragmode", "core/math/expression-types", "core/math/cdf-branches", "core/math/copy-defined-pois", "core/math/distribution-spec", "core/graphing-calc/json/expression", "core/types/opacity", "core/lib/color-helpers", "core/types/styles", "core/math/types", "../ir/opcodes", "core/math/ir/features/as-value", "./getListIdx", "core/types/point-size"], function(require, e, t, a, i, o, r, s, n, l, p, u, h, c, d, m, g, f, y, v, D, x, L, b) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

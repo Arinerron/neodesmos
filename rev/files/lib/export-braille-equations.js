@@ -1,4 +1,3 @@
-
 define('lib/export-braille-equations', ["require", "exports", "abraham", "graphing-calc/models/expression", "expressions/regression_view", "core/lib/number-to-latex"], function(require, e, r, t, s, a) {
     "use strict";
     function n(e, t, s) {

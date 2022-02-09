@@ -1,4 +1,3 @@
-
 define('api/abstract', ["require", "exports", "lib/console", "underscore_model", "ipad.scrollfix", "lib/dom-change-detector"], function(require, e, t, o, n, i) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

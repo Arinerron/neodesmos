@@ -1,4 +1,3 @@
-
 define('core/math/poi-type', ["require", "exports"], function(require, E) {
     "use strict";
     Object.defineProperty(E, "__esModule", {

@@ -1,4 +1,3 @@
-
 define('core/math/parsenode/piecewise', ['require', 'pjs', './expression', './constant', 'core/math/maybe-rational'], function(require) {
     "use strict";
     var n = require("pjs")

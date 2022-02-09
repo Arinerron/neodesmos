@@ -1,4 +1,3 @@
-
 define('graphing/imagelayer', ["require", "exports", "tslib", "jquery", "dcgview", "underscore", "./draw-image-to-ctx", "./svg-groups", "graphing-calc/models/image", "core/lib/label", "keys", "lib/aria", "./movablepointslayer"], function(require, e, t, r, i, a, n, o, s, d, l, c, g) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

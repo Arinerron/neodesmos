@@ -1,4 +1,3 @@
-
 define('mygraphs/graph-preview', ["require", "exports", "tslib", "dcgview", "jquery", "mygraphs/load-graph-view", "loadcss!./graph-preview"], function(require, t, e, r, o, a) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

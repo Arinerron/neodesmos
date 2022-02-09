@@ -1,4 +1,3 @@
-
 define('core/math/ir/builtin-table', ["require", "exports", "core/math/types", "./opcodes", "core/math/maybe-rational"], function(require, e, t, r, n) {
     "use strict";
     function u(e, r, n) {

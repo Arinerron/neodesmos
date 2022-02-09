@@ -1,4 +1,3 @@
-
 define('testbridge', ['require'], function(require) {
     var n = {
         ready: function() {

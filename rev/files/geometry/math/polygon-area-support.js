@@ -1,4 +1,3 @@
-
 define('geometry/math/polygon-area-support', ["require", "exports", "lib/priority-queue", "bugsnag"], function(require, e, n, t) {
     "use strict";
     function i(e, n) {

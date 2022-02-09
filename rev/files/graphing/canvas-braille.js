@@ -1,4 +1,3 @@
-
 define('graphing/canvas-braille', ["require", "exports", "tslib", "./projection", "./screen", "core/graphing-calc/json/graph-settings", "abraham"], function(require, e, t, i, r, n, a) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

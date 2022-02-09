@@ -1,4 +1,3 @@
-
 define('core/math/quadrature', ['require', 'core/math/mathshim', 'core/math/poi'], function(require) {
     "use strict";
     var a = require("core/math/mathshim")

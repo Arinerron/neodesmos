@@ -1,4 +1,3 @@
-
 define('core/math/parsenode/doubleinequality', ['require', 'pjs', './base', 'core/math/comparators', './comparator'], function(require) {
     "use strict";
     var i = require("pjs")

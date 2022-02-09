@@ -1,4 +1,3 @@
-
 define('dcgview-helpers/dragdrop', ["require", "exports", "tslib", "underscore", "jquery", "lib/underscore-shim"], function(require, t, e, i, r, o) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

@@ -1,4 +1,3 @@
-
 define('shared-header/header-toast', ["require", "exports", "tslib", "dcgview", "main/toast-view"], function(require, t, e, r, s) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

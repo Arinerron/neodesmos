@@ -1,4 +1,3 @@
-
 define('graphing-calc/json/config-options', ["require", "exports", "tslib", "core/lib/color-helpers", "lib/console", "main/font_sizes", "expressions/colors", "expressions/image_file_to_data_url", "core/lib/deepCopy", "api/util"], function(require, e, o, a, s, n, t, i, r, l) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

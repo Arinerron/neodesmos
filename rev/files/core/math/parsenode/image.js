@@ -1,4 +1,3 @@
-
 define('core/math/parsenode/image', ['require', 'pjs', './base'], function(require) {
     "use strict";
     return require("pjs")(require("./base"), function(i, t, e, h) {

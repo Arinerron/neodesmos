@@ -1,4 +1,3 @@
-
 define('core/math/parsenode/mixednumber', ['require', 'pjs', './constant'], function(require) {
     "use strict";
     return require("pjs")(require("./constant"), function(n, i) {

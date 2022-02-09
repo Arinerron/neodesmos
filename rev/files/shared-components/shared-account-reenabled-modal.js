@@ -1,4 +1,3 @@
-
 define('shared-components/shared-account-reenabled-modal', ["require", "exports", "tslib", "dcgview", "shared-components/modal", "loadcss!./shared-account-modal"], function(require, e, t, n, o) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

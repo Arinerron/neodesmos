@@ -1,4 +1,3 @@
-
 define('lib/i18n', ["require", "exports", "config", "jquery", "lib/console", "./enabled-languages", "./i18n-core", "./i18n-core"], function(require, e, a, n, t, r, o, u) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

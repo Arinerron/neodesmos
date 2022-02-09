@@ -1,4 +1,3 @@
-
 define('vendor/fake-xml-http-request', [], function() {
     var e = function(e, t, s, n) {
         this.type = e,

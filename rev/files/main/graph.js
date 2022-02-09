@@ -1,4 +1,3 @@
-
 define('main/graph', ['require', 'pjs', 'underscore_model', 'core/lib/worker-i18n', 'main/backend'], function(require) {
     "use strict";
     var e = require("pjs")

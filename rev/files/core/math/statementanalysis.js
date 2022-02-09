@@ -1,4 +1,3 @@
-
 define('core/math/statementanalysis', ['require', 'core/math/evaluationstate', 'pjs', 'core/types/graphmode', 'core/math/workerconfig'], function(require) {
     "use strict";
     var e = require("core/math/evaluationstate").EvaluationState

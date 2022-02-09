@@ -1,4 +1,3 @@
-
 define('mygraphs/mygraphs', ["require", "exports", "tslib", "dcgview", "jquery", "underscore", "mygraphs/item", "mygraphs/graph-in-progress", "mygraphs/user-bar", "mygraphs/graph-preview", "mygraphs/syncing-status-bar", "mygraphs/account-reminder", "mygraphs/load-graph-view", "scroll_helpers", "mygraphs/heading", "keys", "analytics/looker", "shared/dcgviews/localize", "loadcss!./mygraphs"], function(require, e, t, r, n, o, a, l, i, s, c, p, u, h, d, g, m, v) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

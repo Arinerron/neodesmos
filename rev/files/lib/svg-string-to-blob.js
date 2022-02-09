@@ -1,4 +1,3 @@
-
 define('lib/svg-string-to-blob', ["require", "exports"], function(require, e) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

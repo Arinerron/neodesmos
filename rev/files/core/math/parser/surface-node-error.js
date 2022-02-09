@@ -1,4 +1,3 @@
-
 define('core/math/parser/surface-node-error', ["require", "exports"], function(require, e) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

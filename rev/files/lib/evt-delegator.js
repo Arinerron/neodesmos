@@ -1,4 +1,3 @@
-
 define('lib/evt-delegator', ["require", "exports", "jquery", "underscore"], function(require, e, n, r) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

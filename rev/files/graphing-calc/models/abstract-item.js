@@ -1,4 +1,3 @@
-
 define('graphing-calc/models/abstract-item', ["require", "exports", "./list", "graphing-calc/models/expression", "graphing-calc/models/table"], function(require, e, r, t, o) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

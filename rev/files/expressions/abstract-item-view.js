@@ -1,4 +1,3 @@
-
 define('expressions/abstract-item-view', ["require", "exports", "tslib", "jquery", "dcgview", "jquery.handleevent"], function(require, t, e, i, o) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

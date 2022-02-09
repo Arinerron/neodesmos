@@ -1,4 +1,3 @@
-
 define('core/graphing-calc/json/expression', ["require", "exports", "tslib", "core/types/opacity", "core/types/styles", "core/lib/dragmode", "core/types/slider-loop-modes", "core/types/label-sizes", "core/types/label-orientations", "core/lib/default-spec", "../../lib/copy-properties"], function(require, e, i, a, l, t, s, r, n, o, d) {
     "use strict";
     var L;

@@ -1,4 +1,3 @@
-
 define('shared-components/shared-change-password', ["require", "exports", "tslib", "dcgview", "./shared-account-modal-errors", "loadcss!./shared-account-settings-modal", "loadcss!shared-components/btn-styles"], function(require, e, t, n, r) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

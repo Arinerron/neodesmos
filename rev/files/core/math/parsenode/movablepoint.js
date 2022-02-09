@@ -1,4 +1,3 @@
-
 define('core/math/parsenode/movablepoint', ['require', 'pjs', './parenseq', 'core/math/types'], function(require) {
     "use strict";
     var t = require("pjs")

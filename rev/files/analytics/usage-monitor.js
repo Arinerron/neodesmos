@@ -1,4 +1,3 @@
-
 define('analytics/usage-monitor', ["require", "exports", "./usage-client", "./queries/graph-feature"], function(require, e, r, t) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

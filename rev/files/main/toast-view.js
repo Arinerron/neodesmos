@@ -1,4 +1,3 @@
-
 define('main/toast-view', ["require", "exports", "tslib", "dcgview", "loadcss!./toast-view"], function(require, e, t, n) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

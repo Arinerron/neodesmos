@@ -1,4 +1,3 @@
-
 define('core/math/parsenode/seed', ['require', 'pjs', './expression'], function(require) {
     "use strict";
     return require("pjs")(require("./expression"), function(i, n) {

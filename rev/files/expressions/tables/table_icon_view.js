@@ -1,4 +1,3 @@
-
 define('expressions/tables/table_icon_view', ["require", "exports", "tslib", "dcgview", "graphing-calc/models/abstract-item", "dcgview-helpers/tooltipped-error", "../circular-icon-view", "main/manage-focus-helper", "jquery.handleevent"], function(require, t, o, e, n, r, i, l) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

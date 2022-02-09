@@ -1,4 +1,3 @@
-
 define('core/mathtools', ["require", "exports", "parser", "core/math/builtinframe", "parsenodes", "tslib", "core/math/context", "core/cl-calculator", "core/math/parser/latex-parser", "core/math/parser/expression-parser", "core/math/tree-queries/count-numbers", "core/lib/color-helpers", "core/math/policyGraphing", "core/math/policyScientific", "core/math/policyFourFunction", "./math/parser/surface-node-error", "core/lib/label", "core/graphing-calc/diffs/calculate-diff", "core/graphing-calc/diffs/apply-diff", "core/graphing-calc/migrate-state", "core/math/types", "core/graphing-calc/translation/translator", "./math/parser/input-span", "core/lib/number-to-latex", "core/lib/number-to-latex"], function(require, e, r, t, a, n, o, i, c, l, p, u, s, f, m, b, g, y, d, h, x, L, P, D, j) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

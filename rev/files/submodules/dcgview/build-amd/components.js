@@ -1,4 +1,3 @@
-
 define('submodules/dcgview/build-amd/components', ["./for", "./switch", "./switch-union", "./if", "./if-defined", "./if-else", "./textarea", "./input", "./checkbox"], function(e, t, f, u, i, a, n, d, l) {
     "use strict";
     function c(e) {

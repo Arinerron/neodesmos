@@ -1,4 +1,3 @@
-
 define('submodules/dcgview/build-amd/attr-event-handler', [], function() {
     "use strict";
     return function(n, t) {

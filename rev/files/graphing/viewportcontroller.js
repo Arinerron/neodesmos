@@ -1,4 +1,3 @@
-
 define('graphing/viewportcontroller', ['require', 'jquery', 'pjs', 'lib/aria', 'lib/i18n', 'core/math/recttransformation', './viewport', 'core/math/distance', './constants', './projection', 'keys', 'jquery.handleevent', 'vendor/jquery.mousewheel'], function(require) {
     "use strict";
     var t = require("jquery")

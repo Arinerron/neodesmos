@@ -1,4 +1,3 @@
-
 define('graphing-calc/models/image', ["require", "exports", "tslib", "core/lib/color-helpers", "./abstract-item", "core/lib/deepCopy", "core/lib/copy-properties", "./list", "jquery", "core/graphing-calc/json/image", "core/lib/dragmode", "./expression"], function(require, e, a, r, t, n, o, i, l, d, c, s) {
     "use strict";
     function g(e) {

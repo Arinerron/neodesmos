@@ -1,4 +1,3 @@
-
 define('core/math/errormsg', ["require", "exports", "core/math/parsenode/error", "core/lib/worker-i18n", "core/lib/label", "core/math/types"], function(require, r, e, o, n, t) {
     "use strict";
     function a(r) {

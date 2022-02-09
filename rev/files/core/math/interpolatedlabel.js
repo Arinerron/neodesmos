@@ -1,4 +1,3 @@
-
 define('core/math/interpolatedlabel', ["require", "exports", "parsenodes", "core/lib/label", "./policy", "core/math/types"], function(require, e, t, n, r, a) {
     "use strict";
     function u(e) {

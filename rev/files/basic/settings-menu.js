@@ -1,4 +1,3 @@
-
 define('basic/settings-menu', ["require", "exports", "tslib", "browser", "keys", "dcgview", "./dcgview-basic", "jquery", "dcgview-helpers/download-button", "lib/export-braille-equations", "loadcss!./settings-menu"], function(require, e, t, n, o, r, c, l, s, i) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

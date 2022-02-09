@@ -1,4 +1,3 @@
-
 define('shared-components/shared-options-dropdown', ["require", "exports", "tslib", "lib/i18n", "dcgview", "./shared-dropdown-popover", "loadcss!./shared-options-dropdown"], function(require, n, t, e, o, r) {
     "use strict";
     Object.defineProperty(n, "__esModule", {

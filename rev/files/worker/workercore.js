@@ -1,4 +1,3 @@
-
 define('worker/workercore', ['require', 'core/math/context'], function(require) {
     "use strict";
     var e = require("core/math/context").Context;

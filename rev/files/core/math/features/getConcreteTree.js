@@ -1,4 +1,3 @@
-
 define('core/math/features/getConcreteTree', ['require', 'parsenodes', 'core/math/errormsg', 'core/math/types', 'core/math/maybe-rational', 'core/math/sliders'], function(require) {
     "use strict";
     var e = require("parsenodes")

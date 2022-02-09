@@ -1,4 +1,3 @@
-
 define('graphing-calc/models/expression', ["require", "exports", "tslib", "core/lib/dragmode", "core/types/slider-loop-modes", "core/types/styles", "core/types/label-sizes", "core/types/label-orientations", "core/math/evaluate-single-expression", "lib/rounding", "core/lib/deepCopy", "core/lib/copy-properties", "./abstract-item", "./list", "underscore", "core/math/expression-types", "core/lib/label", "core/lib/number-to-latex", "core/math/sliders", "core/lib/number-to-latex", "core/lib/validate-color", "core/graphing-calc/json/expression", "core/math/distribution-spec", "core/graphing-calc/extract-slider-value-from-latex"], function(require, e, i, a, t, r, n, l, o, s, d, u, c, f, p, m, g, x, b, S, v, _, D, M) {
     "use strict";
     function L(e) {

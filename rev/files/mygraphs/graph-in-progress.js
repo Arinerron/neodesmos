@@ -1,4 +1,3 @@
-
 define('mygraphs/graph-in-progress', ["require", "exports", "tslib", "dcgview", "./save-btn", "loadcss!./item"], function(require, e, s, t, a) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

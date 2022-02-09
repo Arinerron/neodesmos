@@ -1,4 +1,3 @@
-
 define('core/lib/dragmode', ["require", "exports"], function(require, e) {
     "use strict";
     var r;

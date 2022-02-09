@@ -1,4 +1,3 @@
-
 define('shared-components/modal', ["require", "exports", "tslib", "dcgview", "jquery", "keys", "lib/evt-delegator", "lib/restrict-focus", "./tooltip", "loadcss!./modal", "loadcss!./dcg-shared-icons"], function(require, e, t, s, o, n, r, i, c) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

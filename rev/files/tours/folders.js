@@ -1,4 +1,3 @@
-
 define('tours/folders', ['require', 'pjs', './base_tour', 'jquery', 'graphing-calc/models/expression'], function(require) {
     "use strict";
     var e = require("pjs")

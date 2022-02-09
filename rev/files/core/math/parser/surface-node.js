@@ -1,4 +1,3 @@
-
 define('core/math/parser/surface-node', ["require", "exports", "./command-aliases"], function(require, n, t) {
     "use strict";
     function e(n) {

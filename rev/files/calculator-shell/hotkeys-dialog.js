@@ -1,4 +1,3 @@
-
 define('calculator-shell/hotkeys-dialog', ["require", "exports", "tslib", "dcgview", "./modal", "browser", "dcgview-helpers/static-mathquill-view", "jquery", "loadcss!./hotkeys-dialog"], function(require, c, e, t, n, s, o, a) {
     "use strict";
     Object.defineProperty(c, "__esModule", {

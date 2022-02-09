@@ -1,4 +1,3 @@
-
 define('core/math/parsenode/seededfunctioncall', ['require', 'pjs', './functioncall'], function(require) {
     "use strict";
     return require("pjs")(require("./functioncall"), function(i, n) {

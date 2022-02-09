@@ -1,4 +1,3 @@
-
 define("toplevel/calculator_desktop", ['require', 'testbridge', 'touchtracking', 'main/calc_desktop', 'main/noconflict'], function(require) {
     "use strict";
     require("testbridge"),

@@ -1,4 +1,3 @@
-
 define('lib/fluent-bundle-sequence', ["require", "exports", "tslib", "@fluent/bundle"], function(require, e, n, r) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

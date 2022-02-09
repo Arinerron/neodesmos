@@ -1,4 +1,3 @@
-
 define('calculator-shell/graph-title', ["require", "exports", "tslib", "dcgview", "jquery", "./save-button"], function(require, t, o, e, r, n) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

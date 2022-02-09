@@ -1,4 +1,3 @@
-
 define('mygraphs/account-reminder', ["require", "exports", "tslib", "dcgview", "loadcss!./account-reminder"], function(require, t, n, e) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

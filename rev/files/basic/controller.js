@@ -1,4 +1,3 @@
-
 define('basic/controller', ["require", "exports", "tslib", "flux", "underscore", "./model", "lib/state-stack", "keypad/mq-commands", "lib/i18n", "dcgview-helpers/mathquill-view", "lib/console", "bugsnag", "core/lib/color-helpers"], function(require, e, t, o, s, i, n, r, a, c, l, p, u) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

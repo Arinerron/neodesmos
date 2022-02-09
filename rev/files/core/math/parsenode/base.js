@@ -1,4 +1,3 @@
-
 define('core/math/parsenode/base', ['require', 'pjs', 'core/math/parser/input-span', 'core/math/domaintypes', 'core/math/types'], function(require) {
     "use strict";
     var e = require("pjs")

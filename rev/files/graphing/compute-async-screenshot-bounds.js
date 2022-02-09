@@ -1,4 +1,3 @@
-
 define('graphing/compute-async-screenshot-bounds', ["require", "exports", "lib/console"], function(require, t, o) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

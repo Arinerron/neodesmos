@@ -1,4 +1,3 @@
-
 define('core/math/parser/latex-node', ["require", "exports"], function(require, r) {
     "use strict";
     Object.defineProperty(r, "__esModule", {

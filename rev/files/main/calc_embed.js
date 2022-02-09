@@ -1,4 +1,3 @@
-
 define('main/calc_embed', ["require", "exports", "main/graph_settings", "tours/tour_manager", "tslib", "jquery", "main/controller", "dcgview", "main/instancehotkeys", "lib/console", "underscore", "lib/defocus-mobile", "graphing-calc/views/main", "underscore_model", "graphing/viewport", "main/evaluator", "graphing/grapher", "core/lib/color-helpers", "api/util", "lib/parse-query-params", "loadcss!tour", "loadcss!calculator_embed", "loadcss!buttons", "loadcss!dcg-normalize", "loadcss!projector_mode", "loadcss!desmos-icons", "loadcss!popovers"], function(require, e, t, o, s, r, a, n, i, l, p, c, d, h, g, u, f, w, m, b) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

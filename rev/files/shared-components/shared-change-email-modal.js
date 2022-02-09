@@ -1,4 +1,3 @@
-
 define('shared-components/shared-change-email-modal', ["require", "exports", "tslib", "dcgview", "shared-components/modal", "./shared-account-modal-errors", "loadcss!./shared-account-modal"], function(require, e, t, n, r, o) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

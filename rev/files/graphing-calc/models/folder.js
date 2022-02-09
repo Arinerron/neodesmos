@@ -1,4 +1,3 @@
-
 define('graphing-calc/models/folder', ["require", "exports", "tslib", "core/lib/deepCopy", "core/lib/copy-properties", "./abstract-item", "./list", "core/graphing-calc/json/folder"], function(require, e, t, d, i, l, o, a) {
     "use strict";
     function c(e) {

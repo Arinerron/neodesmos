@@ -1,4 +1,3 @@
-
 define('core/math/features/tableerror', ['require', 'parsenodes', 'core/lib/worker-i18n'], function(require) {
     "use strict";
     var r = require("parsenodes")

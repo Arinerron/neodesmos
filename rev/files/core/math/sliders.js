@@ -1,4 +1,3 @@
-
 define('core/math/sliders', ["require", "exports"], function(require, e) {
     "use strict";
     function a(e, a) {

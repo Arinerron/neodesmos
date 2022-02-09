@@ -1,4 +1,3 @@
-
 define('expressions/play-pause-icon-view', ["require", "exports", "tslib", "dcgview", "lib/aria", "./circular-icon-view", "main/manage-focus-helper", "graphing-calc/models/expression", "core/types/slider-loop-modes", "../shared-components/tooltip", "jquery.handleevent", "loadcss!./play-pause-icon-view"], function(require, e, t, i, n, o, r, l, a, s) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

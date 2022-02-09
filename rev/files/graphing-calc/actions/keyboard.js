@@ -1,4 +1,3 @@
-
 define('graphing-calc/actions/keyboard', ["require", "exports", "browser", "lib/conditional_blur", "../models/table", "../models/focus", "../models/list", "../models/abstract-item"], function(require, e, t, o, l, i, d, r) {
     "use strict";
     function s(e) {

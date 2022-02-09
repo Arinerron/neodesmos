@@ -1,4 +1,3 @@
-
 define('calculator-shell/share-menu', ["require", "exports", "main/calculator_backend", "tslib", "dcgview", "jquery", "lib/selectable-input", "./menu", "analytics/looker", "shared/dcgviews/localize", "loadcss!./share-menu"], function(require, e, t, n, r, o, c, s, a, l) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

@@ -1,4 +1,3 @@
-
 define('core/math/parsenode/tablecolumn', ['require', 'pjs', './base', './list', './constant', './identifier'], function(require) {
     "use strict";
     var e = require("pjs")

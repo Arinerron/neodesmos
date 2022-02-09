@@ -1,4 +1,3 @@
-
 define('core/math/mathshim', ["require", "exports"], function(require, n) {
     "use strict";
     Object.defineProperty(n, "__esModule", {

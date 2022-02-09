@@ -1,4 +1,3 @@
-
 define('lib/dom-change-detector', ["require", "exports", "tslib", "jquery"], function(require, t, e, i) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

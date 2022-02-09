@@ -1,4 +1,3 @@
-
 define('graphing/audiographnavigator', ["require", "exports", "main/propagate_selection", "tslib", "underscore", "core/types/graphmode", "core/lib/label", "core/math/poi-type", "graphing/tonegenerator", "underscore", "lib/aria"], function(require, e, t, r, n, i, o, a, s, h, p) {
     "use strict";
     function c(e, t, r) {

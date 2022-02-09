@@ -1,4 +1,3 @@
-
 define('submodules/dcgview/build-amd/attr-lifecycle', ["./const"], function(t) {
     "use strict";
     function e(t) {

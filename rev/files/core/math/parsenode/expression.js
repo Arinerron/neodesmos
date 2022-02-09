@@ -1,4 +1,3 @@
-
 define('core/math/parsenode/expression', ['require', 'pjs', './base', 'core/math/errormsg'], function(require) {
     "use strict";
     var e = require("pjs")

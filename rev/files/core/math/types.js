@@ -1,4 +1,3 @@
-
 define('core/math/types', ["require", "exports", "core/lib/worker-i18n"], function(require, e, t) {
     "use strict";
     var r;

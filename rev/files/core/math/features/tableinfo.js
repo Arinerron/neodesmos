@@ -1,4 +1,3 @@
-
 define('core/math/features/tableinfo', ['require', 'parsenodes', 'core/math/types', 'core/lib/label', 'core/math/distribution-spec'], function(require) {
     "use strict";
     var e = require("parsenodes")

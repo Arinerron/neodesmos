@@ -1,4 +1,3 @@
-
 define('submodules/dcgview/build-amd/const', [], function() {
     "use strict";
     return {

@@ -1,4 +1,3 @@
-
 define('lib/console', ["require", "exports", "console"], function(require, e, o) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

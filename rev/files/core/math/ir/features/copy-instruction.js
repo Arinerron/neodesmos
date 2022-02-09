@@ -1,4 +1,3 @@
-
 define('core/math/ir/features/copy-instruction', ["require", "exports", "../opcodes"], function(require, e, r) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

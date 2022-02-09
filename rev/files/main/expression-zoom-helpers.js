@@ -1,4 +1,3 @@
-
 define('main/expression-zoom-helpers', ["require", "exports", "core/lib/deepCopy"], function(require, i, n) {
     "use strict";
     function m(i) {

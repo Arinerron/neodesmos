@@ -1,4 +1,3 @@
-
 define('geometry/math/polygon', ["require", "exports", "tslib", "./hypot", "bugsnag", "./polygon-area-support"], function(require, e, n, r, t, a) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

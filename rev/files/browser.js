@@ -1,4 +1,3 @@
-
 define('browser', ['require', 'jquery'], function(require) {
     var n, t, a, r, e, i = require("jquery"), o = {
         IS_IE8: null !== navigator.userAgent.match(/MSIE 8.0/i),

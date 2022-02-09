@@ -1,4 +1,3 @@
-
 define('core/math/ir/features/as-value', ["require", "exports", "../opcodes", "core/math/context-types", "core/math/maybe-rational"], function(require, e, t, a, r) {
     "use strict";
     function u(e) {

@@ -1,4 +1,3 @@
-
 define('main/graphpaper-branding-view', ["require", "exports", "tslib", "dcgview", "loadcss!pillboxes"], function(require, e, n, t) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

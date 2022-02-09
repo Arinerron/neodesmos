@@ -1,4 +1,3 @@
-
 define('tours/regressions', ['require', 'pjs', 'jquery', './base_tour', 'loadcss!regression-tour', 'browser', 'predicates/common'], function(require) {
     "use strict";
     var t = require("pjs")

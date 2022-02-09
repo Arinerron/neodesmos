@@ -1,4 +1,3 @@
-
 define('core/math/frameGraphing', ['require', 'core/math/builtinframe'], function(require) {
     "use strict";
     var t = require("core/math/builtinframe")

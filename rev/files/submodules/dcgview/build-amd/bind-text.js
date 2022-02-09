@@ -1,4 +1,3 @@
-
 define('submodules/dcgview/build-amd/bind-text', ["./bindings"], function(n) {
     "use strict";
     function e(n) {

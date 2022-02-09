@@ -1,4 +1,3 @@
-
 define('mygraphs/user-bar', ["require", "exports", "tslib", "dcgview", "jquery", "../calculator-shell/account-menu", "loadcss!./user-bar"], function(require, e, t, n, r, c) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

@@ -1,4 +1,3 @@
-
 define('vendor/canvas2svg', [], function() {
     "use strict";
     var t, e, r, i, s;

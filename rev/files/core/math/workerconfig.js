@@ -1,4 +1,3 @@
-
 define('core/math/workerconfig', [], function() {
     "use strict";
     return {

@@ -1,4 +1,3 @@
-
 define('graphing-calc/keypads/letters', ["require", "exports", "tslib", "dcgview", "./dcgview-graphing", "keypad/keys", "keypad/keypad", "keypad/row"], function(require, e, i, t, s, h, l, v) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

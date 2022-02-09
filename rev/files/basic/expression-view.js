@@ -1,4 +1,3 @@
-
 define('basic/expression-view', ["require", "exports", "tslib", "keys", "core/lib/label", "dcgview", "lib/i18n", "jquery", "dcgview-helpers/static-mathquill-view", "dcgview-helpers/mathquill-view", "./dcgview-basic", "abraham", "../shared-components/tooltip", "../lib/abraham-helpers", "main/mathquill-operators", "../shared-components/braille-input", "../core/lib/count-latex-tokens", "loadcss!Abraham", "loadcss!./expression-view"], function(require, t, e, n, i, o, r, a, s, l, c, u, d, p, h, g, f) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

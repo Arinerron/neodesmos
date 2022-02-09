@@ -1,4 +1,3 @@
-
 define('lib/underscore-shim', ["require", "exports", "underscore_model"], function(require, e, o) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

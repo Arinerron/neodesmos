@@ -1,4 +1,3 @@
-
 define('submodules/dcgview/build-amd/dcg-element', ["./bind-attrs", "./bind-text", "./const", "./warnings"], function(t, e, n, r) {
     "use strict";
     function i(t) {

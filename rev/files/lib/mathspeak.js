@@ -1,4 +1,3 @@
-
 define('lib/mathspeak', ["require", "exports", "vendor/mathquill", "jquery"], function(require, t, e, r) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

@@ -1,4 +1,3 @@
-
 define('tours/scatter_plot', ['require', 'pjs', 'jquery', './base_tour', 'predicates/common', 'graphing-calc/models/table'], function(require) {
     "use strict";
     var t = require("pjs")

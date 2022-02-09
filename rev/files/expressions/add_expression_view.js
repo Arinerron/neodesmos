@@ -1,4 +1,3 @@
-
 define('expressions/add_expression_view', ["require", "exports", "tslib", "keys", "browser", "dcgview", "jquery", "./image-upload-view", "main/manage-focus-helper", "../shared-components/tooltip", "loadcss!add_expression"], function(require, e, t, n, o, r, c, a, l, i) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

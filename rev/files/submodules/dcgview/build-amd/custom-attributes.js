@@ -1,4 +1,3 @@
-
 define('submodules/dcgview/build-amd/custom-attributes', [], function() {
     "use strict";
     var t = {};

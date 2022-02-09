@@ -1,4 +1,3 @@
-
 define('tours/lists', ['require', 'pjs', './base_tour', './list_predicates'], function(require) {
     "use strict";
     var t = require("pjs")

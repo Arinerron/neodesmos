@@ -1,4 +1,3 @@
-
 define('submodules/dcgview/build-amd/is-event-handler', [], function() {
     "use strict";
     return function(n) {

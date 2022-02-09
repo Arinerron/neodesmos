@@ -1,4 +1,3 @@
-
 define('main/reset-button-view', ["require", "exports", "tslib", "dcgview", "../shared-components/tooltip", "loadcss!pillboxes"], function(require, t, e, o, r) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

@@ -1,4 +1,3 @@
-
 define('core/math/parsenode/regression', ['require', 'pjs', './base', 'core/math/errormsg', './functioncall', './identifier', './expressionTypes'], function(require) {
     "use strict";
     var e = require("pjs")

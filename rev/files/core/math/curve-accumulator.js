@@ -1,4 +1,3 @@
-
 define('core/math/curve-accumulator', ["require", "exports", "core/math/distance"], function(require, t, e) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

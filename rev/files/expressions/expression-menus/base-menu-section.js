@@ -1,4 +1,3 @@
-
 define('expressions/expression-menus/base-menu-section', ["require", "exports", "tslib", "dcgview", "main/mathquill-operators", "graphing-calc/models/abstract-item"], function(require, t, e, o, i, l) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

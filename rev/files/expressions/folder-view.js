@@ -1,4 +1,3 @@
-
 define('expressions/folder-view', ["require", "exports", "tslib", "./expression-edit-actions", "./abstract-item-view", "./smart_textarea", "dcgview", "./circular-icon-view", "jquery.handleevent", "loadcss!./folder-view"], function(require, e, t, o, n, r, i, l) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

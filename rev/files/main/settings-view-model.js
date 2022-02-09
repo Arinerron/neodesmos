@@ -1,4 +1,3 @@
-
 define('main/settings-view-model', ["require", "exports", "tslib", "core/lib/label"], function(require, t, i, e) {
     "use strict";
     function n(t, i) {

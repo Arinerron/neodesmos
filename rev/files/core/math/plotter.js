@@ -1,4 +1,3 @@
-
 define('core/math/plotter', ["require", "exports", "tslib", "core/math/distance", "./poi", "./implicit-plotter", "./curve-accumulator", "./poi-finding-accumulator", "core/types/graphmode", "./domaintypes", "core/math/copy-defined-pois"], function(require, e, n, i, t, r, a, o, s, m, c) {
     "use strict";
     function l(e, n) {

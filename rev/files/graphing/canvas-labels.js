@@ -1,4 +1,3 @@
-
 define('graphing/canvas-labels', ["require", "exports", "tslib", "core/lib/deepCopy", "graphing/svg-classes"], function(require, e, t, r, o) {
     "use strict";
     function n(e, t) {

@@ -1,4 +1,3 @@
-
 define('core/math/ir/features/bound-domain', ["require", "exports", "core/math/domaintypes", "core/math/types", "core/math/maybe-rational", "../opcodes", "./polynomial-order", "./get-polynomial-coefficients", "../instructions", "./is-constant", "./as-value"], function(require, e, a, n, t, r, s, i, o, c, u) {
     "use strict";
     function l(e, m) {

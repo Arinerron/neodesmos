@@ -1,4 +1,3 @@
-
 define('core/graphing-calc/migrations/2', ['require', 'core/lib/color-helpers'], function(require) {
     "use strict";
     var r = require("core/lib/color-helpers").colors;

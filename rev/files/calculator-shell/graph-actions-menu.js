@@ -1,4 +1,3 @@
-
 define('calculator-shell/graph-actions-menu', ["require", "exports", "tslib", "dcgview", "./menu", "../shared-components/shared-options-dropdown", "jquery", "loadcss!./graph-actions-menu"], function(require, t, o, e, n, r, i) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

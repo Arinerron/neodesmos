@@ -1,4 +1,3 @@
-
 define('expressions/expression-menus/label', ["require", "exports", "tslib", "./base-menu-section", "dcgview", "expressions/toggle-view", "dcgview-helpers/mathquill-view", "graphing-calc/models/expression", "core/types/label-sizes", "./label-orientation-view", "./color-picker", "dcgview-helpers/checkbox", "core/lib/dragmode", "core/graphing-calc/json/expression", "core/math/interpolatedlabel", "../../shared-components/tooltip"], function(require, e, t, n, l, o, i, r, a, c, s, d, u, p, b, g) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

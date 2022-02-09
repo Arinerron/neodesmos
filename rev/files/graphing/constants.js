@@ -1,4 +1,3 @@
-
 define('graphing/constants', ["require", "exports"], function(require, A) {
     "use strict";
     Object.defineProperty(A, "__esModule", {

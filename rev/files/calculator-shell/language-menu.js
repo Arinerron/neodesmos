@@ -1,4 +1,3 @@
-
 define('calculator-shell/language-menu', ["require", "exports", "tslib", "dcgview", "./menu", "shared-components/language-picker", "../lib/enabled-languages", "loadcss!./language"], function(require, e, n, t, r, o, l) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

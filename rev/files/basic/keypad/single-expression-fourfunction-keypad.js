@@ -1,4 +1,3 @@
-
 define('basic/keypad/single-expression-fourfunction-keypad', ["require", "exports", "tslib", "dcgview", "basic/dcgview-basic", "keypad/keys", "keypad/keypad", "keypad/row"], function(require, t, e, i, l, n, s, h) {
     "use strict";
     Object.defineProperty(t, "__esModule", {

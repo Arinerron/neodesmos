@@ -1,4 +1,3 @@
-
 define('expressions/expression-menus/fill', ["require", "exports", "tslib", "./base-menu-section", "dcgview", "expressions/toggle-view", "dcgview-helpers/mathquill-view", "graphing-calc/models/expression", "core/types/opacity", "./color-picker", "../../shared-components/tooltip"], function(require, e, t, n, o, i, r, l, c, s, a) {
     "use strict";
     Object.defineProperty(e, "__esModule", {

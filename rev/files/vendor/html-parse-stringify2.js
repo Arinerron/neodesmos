@@ -1,4 +1,3 @@
-
 define('vendor/html-parse-stringify2', [], function() {
     return function(e) {
         var t = {};

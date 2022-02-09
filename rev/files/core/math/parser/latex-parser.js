@@ -1,4 +1,3 @@
-
 define('core/math/parser/latex-parser', ["require", "exports", "./latex-lexer", "./input-span", "./latex-node"], function(require, e, r, a, t) {
     "use strict";
     function s(e) {

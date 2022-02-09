@@ -1,4 +1,3 @@
-
 define('api/fourfunction', ["require", "exports", "tslib", "./basic", "core/lib/deepCopy", "lib/console", "./util"], function(require, n, t, i, e, o, a) {
     "use strict";
     Object.defineProperty(n, "__esModule", {
