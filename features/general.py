@@ -15,7 +15,8 @@ class InjectGlobalsFeature(Feature):
 
     def patch(self):
         self.insert_after_re('^var requirejs,require,define;', (
-            'function PATCH_SHOW_TOAST(msg) {'
+            'window.neodesmos = new Object();'
+            'neodesmos.show_toast = function(msg) {'
                 # NOTE: You can find more events you can dispatch by searching for "e.prototype.handleDispatchedAction = function(e) {" in the rev js file
                 "window.controller.dispatch({"
                     'type: "toast/show",'
@@ -25,7 +26,7 @@ class InjectGlobalsFeature(Feature):
                         'toastStyle: "cover"'
                     "}"
                 "})"
-            '}'
+            '};'
 
             'var PATCH_INIT_RAN = false;'
             'function PATCH_INIT() {'
