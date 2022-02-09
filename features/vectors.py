@@ -5,7 +5,7 @@ from . import *
 class VectorNotationFeature(Feature):
     def patch(self):
         # language
-        self.insert_after('graphing-calculator-label-evaluation-list = { $count } element list\\n', 'graphing-calculator-label-evaluation-vector - { $dimension dimension vector }\\n')
+        self.insert_after('graphing-calculator-label-evaluation-list = { $count } element list\\n', 'graphing-calculator-label-evaluation-vector = { $dimension } dimension vector\\n')
         
         # rendering evaluation
         # TODO: add latex rendering of (x,y,z) as a vertical column of numbers here. See the fraction code :71880
@@ -18,11 +18,11 @@ class VectorNotationFeature(Feature):
             'vector: function() {'
                 r'return \2.createElement("span", {'
                     r'class: \2.const("dcg-evaluation-list")'
-                r'}), function() {'
+                r'}, function() {'
                     r'return \4.controller.\3("graphing-calculator-label-evaluation-vector", {'
-                        r'count: \4.props.val().length'
+                        r'dimension: \4.props.val().vector.length'
                     r'})'
-                r'}'
+                r'})'
             '},'
             )
 
@@ -287,6 +287,11 @@ class VectorNotationFeature(Feature):
                 r'return found_vector && !all_vectors;' # not all are vectors, but at least one is
             r'}', matches=2)
         '''
+
+        # evaluator display
+        self.replace("e.asValue=function(e,a){var r=e.getInstruction(a);switch(r.type){case t.Constant:return u(r.value);", "e.asValue=function(e,a,isVector){var r=e.getInstruction(a);switch(r.type){case t.Constant:var arr=u(r.value);if(isVector){return {\"vector\":arr};}else{return arr;}", matches=2)
+        self.replace("return A.asValue(this,this.returnIndex)", "return A.asValue(this,this.returnIndex,this.instructions.length==1&&this.instructions[0].valueType==n.VectorOfNumber)", matches=2)
+        self.replace("c.prototype.getEvaluationType=function(){var e=this.props.val();return\"string\"==typeof e?\"rgbcolor\":Array.isArray(e)?\"string\"==typeof e[0]?\"rgbcolor\":\"list\":this.getNumberLabel().type}", "c.prototype.getEvaluationType=function(){var e=this.props.val();if(e.vector)return \"vector\";return\"string\"==typeof e?\"rgbcolor\":Array.isArray(e)?\"string\"==typeof e[0]?\"rgbcolor\":\"list\":this.getNumberLabel().type}")
 
         # TODO: add an icon that shows the item is a vector (like if you type f(x) it shows a squiggly line)
 
