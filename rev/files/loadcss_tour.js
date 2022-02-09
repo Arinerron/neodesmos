@@ -1,0 +1,2 @@
+
+define('loadcss!tour', function() {});

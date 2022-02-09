@@ -1,0 +1,2 @@
+
+define('loadcss!main', function() {});
