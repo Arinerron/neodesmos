@@ -18,7 +18,7 @@ if __name__ == '__main__':
 
         features.banner.InjectBannerFeature,
 
-        features.vectors.VectorNotationFeature,
+        features.vectors.SupportVectorFeature,
 
         features.symbols.SupportInfFeature,
         features.symbols.SupportNrtFeature,

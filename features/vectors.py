@@ -2,10 +2,127 @@
 
 from . import *
 
-class VectorNotationFeature(Feature):
+INSTRUCTION_VECTOR_OF_NUMBER = 58
+INSTRUCTION_EMPTY_VECTOR = 59
+INSTRUCTION_CROSS_PRODUCT = 97
+
+class SupportVectorFeature(Feature):
     def patch(self):
+        self.patch_notation()
+        self.patch_cross_product()
+
+
+    def patch_cross_product(self):
+        self.insert_after_re(r'"\]=(\S)\.times=', r'g.cross=')
+        self.insert_after_re(r'var \S="alpha beta ', r'cross ')
+        #self.replace(r'"&times;","[x]","times', r'"&times;","[x]","cross')
+        self.replace(r'\\times":"*",', r'\\times":"Cross",', matches=2) # gets used by https://github.com/Arinerron/neodesmos/blob/main/rev/files/core/math/parser/expression-lexer.js#L102-L103
+        self.insert_after(r'allTokenTypes=Object.keys({', r'Cross:!0,', matches=2)
+        self.insert_after_re(r'(\S)\.la\("Trig"\),', r'\2.la("Cross"),', matches=2)
+        self.insert_before_re(r'case"\.":\S=\S\.advance\(\S\);\S=\S\.spanStates', r'case "Cross":', matches=2)
+        
+        self.insert_after_re(r'\S\.peek\(\S\);switch\(\S\.type\)\{case"\+":', r'case "Cross":', matches=2)
+        self.insert_after_re(r'":return (\S)\.Mul\((\S),(\S)\);', r'case "Cross": return \2.Cross(\3,\4);', matches=2)
+        self.insert_after_re(r'(\S)\.Mul=function\((\S),(\S)\)\{return\{type:"Mul",span:(\S),args:(\S)\}\},',
+            # \2: n
+            # \3: n (arg)
+            # \4: t
+            # \5: n (span)
+            # \6: t (span)
+            r'\2.Cross = function(\3, \4) {'
+                r'return {'
+                    r'type: "Cross",'
+                    r'span: \3,'
+                    r'args: \4'
+                r'}'
+            r'},', matches=2)
+        self.insert_before_re(r'case (\S)\.Action:return \S\(\S\.type\)', r'case \2.Cross:', matches=2)
+        self.insert_after_re(r'case (\S).Multiply:return"Multiply";', r'case \2.Cross:return "Cross";', matches=2)
+        self.insert_after_re(r'getInstruction\(\S\);switch\((\S)\.type\)\{case (\S)\.Constant\:return \S\.value;case \S\.Add\:return \S\((\S)\((\S),\S\.args\[0\],(\S)\),\S\(\S,\S\.args\[1\],\S\)\);',
+            # \2: n
+            # \3: a
+            # \4: M
+            # \5: r
+            # \6: t
+            r'case \3.Cross:return cross(\4(\5, \2.args[0], \6), \4(\5, \2.args[1], \6));', matches=2)
+        self.insert_before_re(r'function \S\(\S,\S,\S\)\{var \S=\S\.getInstruction\(\S\);switch', r'function cross(r, e) {console.log("cross(",r,e,")");return t.sub(r,e);}', matches=2)
+        self.insert_before_re(r'(\S)\.GreaterEqual=\S,\S\.And=function\(', r'\2.Cross = cross,', matches=2)
+        self.insert_before_re(r'(\S)\.Multiply=\S,\S\.Divide=', r'\2.Cross=cross,', matches=2)
+
+        self.insert_before_re(r'case (\w+)\.Multiply\:\S\=(\w+)\.getInstruction\((\w+)\.args\[0\]\),\w\=\w\.getInstruction\(\w\.args\[1\]\);return \w\.type\=\=\=\S\.Constant&&\S\.type\=\=\=\S\.Constant\?\(\S\.popInstruction\(\),\S\.Constant\((\w+)\.Multiply\(\S\.value,\S\.value\)\)\)\:\S\.type\=\=\=\S\.Constant&&1\=\=\=\S\.asFloat\(\S\.value\)\?\(\S\.popInstruction\(\),\S\.args\[1\]\)\:\S\.type\=\=\=n\.Constant&&1\=\=\=(\w+)\.asFloat\(\S\.value\)\?\(\S\.popInstruction\(\),\S\.args\[0\]\)\:\S\.returnIndex;',
+            # \2: n
+            # \3: t
+            # \4: d
+            # \5: l
+            # \6: s
+            r'''case \2.Cross:
+    C = \3.getInstruction(\4.args[0]),
+    f = \3.getInstruction(\4.args[1]);
+    return C.type === \2.Constant && f.type === \2.Constant ? (\3.popInstruction(),
+    \3.Constant(\5.Cross(C.value, f.value))) : C.type === \2.Constant && 1 === \6.asFloat(C.value) ? (\3.popInstruction(),
+    \4.args[1]) : f.type === \2.Constant && 1 === \6.asFloat(f.value) ? (\3.popInstruction(),
+    \4.args[0]) : \3.returnIndex;
+'''.replace('\n', ' '), matches=2)
+
+        self.insert_before_re(r'case (\w+)\.Multiply\:(\w+)\=\[(\w+)\.Number,\w\.Number\];if\(\!(\w+)\((\w+),(\w+)\.args,(\w+)\)\)throw (\w+)\.multiplyTypeError\((\w+)\(\w,\w\.args\)\);return;',
+            # \2: t
+            # \3: p
+            # \4: a
+            # \5: u
+            # \6: e
+            # \7: c
+            # \8: p
+            # \9: r
+            # \10: i
+            r'case \2.Cross:'
+                r'\3 = [\4.Number, \4.Number];'
+                r'if (!\5(\6, \7.args, \8))'
+                    r'throw \9.crossTypeError(\10(\6, \7.args));'
+                r'return;', matches=2)
+        self.insert_before_re(r'(\w+)\.multiplyTypeError=function\(\w\)\{return (\w+)\((\w+)\.(\w+)',
+            r'\2.crossTypeError = function(r) {'
+            r'return \3(\4.\5("shared-calculator-error-cross-type-error", {symbol1: r[0], symbol2: r[1]})).allowExport()'
+            r'},', matches=2)
+        self.insert_before_re(r'\\nshared-calculator-error-multiply-type-error = ', r'\\nshared-calculator-error-cross-type-error = Cannot find cross product of { $symbol1 } and { $symbol2 }')
+        self.insert_after_re(r'Multiply\:(\w+)\((\w+),\{\}\),', r'Cross: \2(\3, {}),', matches=2)
+        self.insert_after_re(r'(\w+).Multiply=10,', r'\2.Cross = ' + str(INSTRUCTION_CROSS_PRODUCT) + ',', matches=2)
+        self.insert_after_re(r'case"Mul"\:return (\w+)\.Multiply\((\w+)\((\w+),(\w+)\.args\)\);', r'case "Cross": return \2.Cross(\3(\4, \5.args));', matches=2)
+        self.insert_before_re(r'case (\w+)\.Action:return \S\(\S\.type\)\+', r'case \2.Cross:', matches=2)
+        self.insert_after_re(r'case (\w+)\.Multiply:return"Multiply";', r'case \2.Cross: return "Cross";', matches=2)
+
+        self.insert_after_re(r'case"Multiply":return (\w+)\.Multiply\((\w+)\((\w+),(\w+)\.args\)\);', r'case "Cross": return \2.Cross(\3(\4, \5.args));', matches=2)
+        self.insert_after_re(r'(\w+)\.prototype\.Multiply\=function\(\w\)\{var \w\=(\w+)\.Multiply,\w\=(\w+)\.getValueType\(this,\w,\w\);return this\.pushInstruction\(\{type\:\w,valueType\:\w,args\:\w\}\)\},',
+            r'\2.prototype.Cross = function(t) {'
+                r'var e = \3.Cross, n = \4.getValueType(this, e, t);'
+                r'return this.pushInstruction({'
+                    r'type: e, valueType: n, args: t'
+                r'})'
+            r'},', matches=2)
+        self.insert_after_re(r'\w\.getValueType\=function\(\w,\w,\w\)\{switch\(\w\)\{case (\w+)\.Add\:', r'case \2.Cross:', matches=2)
+        self.insert_after_re(r'\w\.copyInstructionWithArgs\=function\((\w+),\w,(\w+)\)\{switch\(\w\.type\)\{case (\w+)\.Add\:return \w\.Add\(\w\);', r'case \4.Cross: return \2.Cross(\3);', matches=2)
+        self.insert_after_re(r'return \w\.returnIndex;switch\(\w\.type\)\{case (\w+)\.Add:case \w\.Subtract:', r'case \2.Cross:', matches=2)
+
+        self.insert_before_re(r'case (\w+)\.Subtract\:if\(\w\((\w+),(\w+)\.args\[0\]\)&&(\w+)\(\w,\w\.args\[1\]\)\)',
+            # \2: r
+            # \3: e
+            # \4: s
+            # \5: t
+            r'''case \2.Cross:
+if (\5(e, \4.args[0]) && \5(\3, \4.args[1])) {
+    c = \3.Constant(1),
+    i = \3.Constant(2);
+    return \3.OrderedPair([\3.Subtract([\3.OrderedPairAccess([\4.args[0], c]), \3.OrderedPairAccess([\4.args[1], c])]), \3.Subtract([\3.OrderedPairAccess([\4.args[0], i]), \3.OrderedPairAccess([\4.args[1], i])])]);
+}
+return e.returnIndex;
+        '''.replace('\n', ' '), matches=2)
+
+        #self.replace(r'return function(r,e,t){', r'var asdf = function(r, e, t) {', matches=2)
+        #self.replace('s}(r,e,t);', r's}(r,e,t); console.log("asdf:", asdf); return [{"vector": [1,2]}];', matches=2)
+
+
+    def patch_notation(self):
         # language
-        self.insert_after('graphing-calculator-label-evaluation-list = { $count } element list\\n', 'graphing-calculator-label-evaluation-vector = { $dimension } dimension vector\\n')
+        self.insert_after('graphing-calculator-label-evaluation-list = { $count } element list\\n', 'graphing-calculator-label-evaluation-vector = { $dimension }D vector\\n')
         
         # rendering evaluation
         # TODO: add latex rendering of (x,y,z) as a vertical column of numbers here. See the fraction code :71880
@@ -227,9 +344,6 @@ class VectorNotationFeature(Feature):
             return g.ConstantOfType(_, F);
     '''.replace('\n', ''), matches=2)
 
-        INSTRUCTION_VECTOR_OF_NUMBER = 58
-        INSTRUCTION_EMPTY_VECTOR = 59
-
         self.insert_after_re(r'(\S)\.EmptyList=11,', r'\2.EmptyVector=' + str(INSTRUCTION_EMPTY_VECTOR) + r',\2.VectorOfNumber=' + str(INSTRUCTION_VECTOR_OF_NUMBER) + r',', matches=2) # XXX: 59 could exist in the future, assuming unused
         self.insert_after_re(r'(\S)\[\S\.EmptyList\]=(\S)\.Number,', r'\2[\3.EmptyVector] = \3.Number,\2[\3.VectorOfNumber] = \3.Number,', matches=2)
         self.insert_after_re(r'case (\S)\.EmptyList:return"EmptyList";', r'case \2.EmptyVector:return"EmptyVector";', matches=2)
@@ -293,6 +407,12 @@ class VectorNotationFeature(Feature):
         self.replace("return A.asValue(this,this.returnIndex)", "return A.asValue(this,this.returnIndex,this.instructions.length==1&&this.instructions[0].valueType==n.VectorOfNumber)", matches=2)
         self.replace("c.prototype.getEvaluationType=function(){var e=this.props.val();return\"string\"==typeof e?\"rgbcolor\":Array.isArray(e)?\"string\"==typeof e[0]?\"rgbcolor\":\"list\":this.getNumberLabel().type}", "c.prototype.getEvaluationType=function(){var e=this.props.val();if(e.vector)return \"vector\";return\"string\"==typeof e?\"rgbcolor\":Array.isArray(e)?\"string\"==typeof e[0]?\"rgbcolor\":\"list\":this.getNumberLabel().type}")
 
+        self.insert_after_re(r'case (\w+)\.List:if\(0===\w\.length\)return \w\.EmptyList;var \w=(\w+)\.getInstruction\((\w+)\[0\]\)\.valueType;return (\w+)\.hasListType\(\w\)\?t\.listType\(\w\)\:\w\.ListOfAny;',
+            r'case \2.Vector:'
+                r'if (0 === \4.length) return \5.EmptyVector;'
+            r'var i = \3.getInstruction(\4[0]).valueType;'
+            r'return \5.hasVectorType(i) ? \5.vectorType(i) : t.VectorOfAny;', matches=2) # TODO: add VectorOfAny
+
         # TODO: add an icon that shows the item is a vector (like if you type f(x) it shows a squiggly line)
 
         # DEBUG TODO remove
@@ -303,3 +423,4 @@ class VectorNotationFeature(Feature):
         # XXX: add a truncatedHTMLLabel? see :20634
 
         #self.insert_after('E=o.initialPrec,f={trailingComma:!1};', 'console.log("THIS IS c:", c);console.log("THIS IS p:", p);', matches=2)
+
