@@ -347,7 +347,8 @@ return e.returnIndex;
         self.insert_after_re(r'(\S)\.EmptyList=11,', r'\2.EmptyVector=' + str(INSTRUCTION_EMPTY_VECTOR) + r',\2.VectorOfNumber=' + str(INSTRUCTION_VECTOR_OF_NUMBER) + r',', matches=2) # XXX: 59 could exist in the future, assuming unused
         self.insert_after_re(r'(\S)\[\S\.EmptyList\]=(\S)\.Number,', r'\2[\3.EmptyVector] = \3.Number,\2[\3.VectorOfNumber] = \3.Number,', matches=2)
         self.insert_after_re(r'case (\S)\.EmptyList:return"EmptyList";', r'case \2.EmptyVector:return"EmptyVector";', matches=2)
-        self.insert_before_re(r'case \S\.ListOfPolygon:case (\S)\.EmptyList:return!0;', r'case \2.EmptyVector:case \2.VectorOfNumber:', matches=2)
+        #self.insert_before_re(r'case \S\.ListOfPolygon:case (\S)\.EmptyList:return!0;', r'case \2.EmptyVector:case \2.VectorOfNumber:', matches=2) # jumpback
+        self.insert_after_re(r'case \S\.ListOfPolygon:case (\S)\.EmptyList:return!0;', r'case \2.EmptyVector:case \2.VectorOfNumber:', matches=2)
         self.insert_after_re(r'\){case (\S)\.EmptyList:case \S\.ListOfNumber:', r'case \2.EmptyVector:case \2.VectorOfNumber:', matches=2)
         self.insert_after_re(r'\S=\[(\S)\.Number,\S\.ListOfNumber,\S\.EmptyList', r', \2.EmptyVector, \2.VectorOfNumber', matches=2)
         # XXX: do we need :20169 @ return !(t !== e.EmptyList || !o(r)) || (!(r !== e.ListOfAny || !o(t)) || t  ... 
