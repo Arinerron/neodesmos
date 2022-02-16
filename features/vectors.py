@@ -45,7 +45,17 @@ class SupportVectorFeature(Feature):
             # \5: r
             # \6: t
             r'case \3.Cross:return cross(\4(\5, \2.args[0], \6), \4(\5, \2.args[1], \6));', matches=2)
-        self.insert_before_re(r'function \S\(\S,\S,\S\)\{var \S=\S\.getInstruction\(\S\);switch', r'function cross(r, e) {console.log("cross(",r,e,")");return t.sub(r,e);}', matches=2)
+        self.insert_before_re(r'function \S\(\S,\S,\S\)\{var \S=\S\.getInstruction\(\S\);switch', r'''function cross(r, e) {
+    console.log("cross(",r,e,")");
+    /*return t.sub(r,e);*/
+    if (typeof r === "object" && r.length !== undefined && typeof e === "object" && e.length !== undefined) {
+        return [
+            t.sub(t.mul(r[1], e[2]), t.mul(r[2], e[1])),
+            t.sub(t.mul(r[2], e[0]), t.mul(r[0], e[2])),
+            t.sub(t.mul(r[0], e[1]), t.mul(r[1], e[0]))
+        ];
+    } else { return t.mul(r, e); }
+}'''.replace('\n', ''), matches=2)
         self.insert_before_re(r'(\S)\.GreaterEqual=\S,\S\.And=function\(', r'\2.Cross = cross,', matches=2)
         self.insert_before_re(r'(\S)\.Multiply=\S,\S\.Divide=', r'\2.Cross=cross,', matches=2)
 
@@ -59,7 +69,13 @@ class SupportVectorFeature(Feature):
     C = \3.getInstruction(\4.args[0]),
     f = \3.getInstruction(\4.args[1]);
     return C.type === \2.Constant && f.type === \2.Constant ? (\3.popInstruction(),
-    \3.Constant(\5.Cross(C.value, f.value))) : C.type === \2.Constant && 1 === \6.asFloat(C.value) ? (\3.popInstruction(),
+        (
+        C.value.length === undefined && f.value.length === undefined
+        ? \3.Constant(\5.Cross(C.value, f.value))
+        : \3.Vector(\5.Cross(C.value, f.value))
+        )
+    )
+    : C.type === \2.Constant && 1 === \6.asFloat(C.value) ? (\3.popInstruction(),
     \4.args[1]) : f.type === \2.Constant && 1 === \6.asFloat(f.value) ? (\3.popInstruction(),
     \4.args[0]) : \3.returnIndex;
 '''.replace('\n', ' '), matches=2)
@@ -76,7 +92,8 @@ class SupportVectorFeature(Feature):
             # \10: i
             r'case \2.Cross:'
                 r'\3 = [\4.Number, \4.Number];'
-                r'if (!\5(\6, \7.args, \8))'
+                r'var a\3 = [\4.VectorOfNumber, \4.VectorOfNumber];'
+                r'if (!(\5(\6, \7.args, \3) || \5(\6, \7.args, a\3) ))'
                     r'throw \9.crossTypeError(\10(\6, \7.args));'
                 r'return;', matches=2)
         self.insert_before_re(r'(\w+)\.multiplyTypeError=function\(\w\)\{return (\w+)\((\w+)\.(\w+)',
@@ -169,7 +186,8 @@ return e.returnIndex;
         self.insert_after_re(r'case"Index":case"List":', 'case "Vector":', matches=2)
         self.insert_after_re(r'case"Sub":case"List":', 'case "Vector":', matches=1)
         self.insert_after_re(r'case t.List:return"List";', 'case t.Vector: return "Vector";', matches=2)
-        self.insert_after_re(r'(\S).List=38,', r'\2.Vector=99,', matches=2) # XXX: this opcode could get taken sometime
+        self.insert_after_re(r'(\S)\.List=38,', r'\2.Vector=99,', matches=2) # XXX: this opcode could get taken sometime
+        self.insert_before_re(r'case (\w)\.Action:return \w\.returnIndex;default:throw', r'case \2.Vector:', matches=4) # XXX ??? 4 matches?
         self.insert_after_re(r'(\S)\.prototype\.List=function\((\S)\)\{var n=(\S)\.List,r=(\S)\.getValueType\(this,n,t\);if\(t\.length>(\S)\)throw\ e\.maxListSize\(\S\.toLocaleString\(\)\);return this\.pushInstruction\(\{type:n,valueType:r,args:t}\)},', # :31133
                 # \2: t
                 # \3: t (func arg) # XXX: remove
@@ -178,7 +196,8 @@ return e.returnIndex;
                 # \6: E
                 r'\2.prototype.Vector = function(t) {'
                     r'var n = \4.Vector,'
-                        r'r = \5.getValueType(this, n, t);'
+                        #r'r = \5.getValueType(this, n, t);'
+                        r'r = 1;'
                     r'if (t.length > \6) throw e.maxListSize(\6.toLocaleString());' # TODO: make own error msg
                     r'if (t.length == 0) throw e.emptyVector(\6.toLocaleString());' # TODO: make own error msg
                     'return this.pushInstruction({type: n, valueType: r, args: t});'
@@ -424,4 +443,22 @@ return e.returnIndex;
         # XXX: add a truncatedHTMLLabel? see :20634
 
         #self.insert_after('E=o.initialPrec,f={trailingComma:!1};', 'console.log("THIS IS c:", c);console.log("THIS IS p:", p);', matches=2)
+        
+        self.insert_before(r'case t.List:if(0===c.args.length)return;var d=e.getInstruction', r'''
+            case t.Vector:
+                if (0 === c.args.length)
+                    return;
+                var d = e.getInstruction(c.args[0]).valueType;
+                if (!a.hasVectorType(d))
+                    throw r.vectorTypeError([a.prettyPrint(d)]);
+                for (var h = 0, b = c.args; h < b.length; h++) {
+                    l = b[h];
+                    var m = e.getInstruction(l).valueType;
+                    if (!a.hasVectorType(m))
+                        throw r.vectorTypeError([a.prettyPrint(m)]);
+                    if (m !== d)
+                        throw r.heterogeneousList()
+                }
+                return;
+        '''.replace('\n', ''), matches=2)
 
